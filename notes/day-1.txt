@@ -1,4 +1,13 @@
-welcome to PLT:
+PLT:
+a. what is s/w?
+b. examples of s/w
+c. different types of s/w
+d. code
+e. programming language
+f. programming language related terminologies: process, variable, data type, function etc.
+g. different types of programming language
+
+
 Tally is an application
 Amazon is website
 
@@ -142,18 +151,48 @@ long b = 12345678
 
 float f = 12.34
 
+Programming techniques:
+a. decalartive programming: Angular, React, Vue etc.
+a technique to abstract away the control flow for logic which is required for a s/w to perform some action, and instead invloves stating what the task or desired result/outcome
+this depends on pre-configured facilities (capabilities)in the language to accomplish a task
+it focuses mainly on outcome
+
+b. imperative programming: (Latin word, imperare = command)
+focuses on the steps to achieve the outcome, Fortran, Pascal, ALGOL
+
+c. combine decalartive and imperative programming techniques: Java, C#
 
 
+num % 2 == 0
+
+functional/procedural: C
+	only procedures (functions)
+OOP language: Java, C#, C++
+	concept of class + functions
+
+void getUserInput(){
+	long mobileNo = <value-from-the-mobile-textbox>;
+	string email = <value-from-the-email-textbox>;
+	string name = <value-from-the-name-textbox>;
+	string userName = <value-from-the-username-textbox>;
+	string pwd = <value-from-the-password-textbox>;
+}
 
 
+class User
+{
+   long mobileNo;
+   string name;
+   string email;
+   string username;
+   string password;
+};
 
+User nehaUser;
+nehaUser.mobileNo=<value-from-the-mobile-textbox>;
+nehaUser.name=<value-from-the-name-textbox>;
+nehaUser.email=<value-from-the-email-textbox>;
+..............
 
-
-
-
-
-
-
-
-
+User akshayUser;
 
