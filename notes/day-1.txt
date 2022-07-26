@@ -1,1 +1,159 @@
-welcome to PLT
+welcome to PLT:
+Tally is an application
+Amazon is website
+
+design: HTML (Hyper Text Markup Language)
+styling: CSS (Cascading Stylesheet)
+code:  JavaScript
+
+Code: lines of instruction about what your application does
+such as: what happens if a "Visit Google" link (anchor or a) on the webapage is clicked
+
+Notepad: a desktop application
+
+code: is written using a programming language, like, JavaScript
+But any code might be written in human understandable way, but finally is converted to machine level language, i.e. in terms of 0s and 1s
+
+0 => 00000000
+1 => 00000001
+2 => 00000010
+3 => 00000011
+
+A->Z
+a->z
+@, #, $, %, ^, &, *, (, ), -, +
+
+memory address: hexadecimal => 0XS23D4R5
+chip: Embded C++
+
+programming languages and techniques:
+C, C++, Java, C#, Python, Ruby, JavaScript, TypeScript, Go language (From Google), Swift etc.
+OOP (Object-oriented programming) languages: Java, C++, C# etc.
+Java
+
+Softwares:
+a. Application s/w
+b. System s/w
+
+different programming language categories:
+a. functional/procedural: C 
+b. declarative: SQL etc.
+c. OOP language: C++, Java, C# etc.
+d. Object-based programming language: JavaScript etc.
+etc.
+
+languages:
+a. High-level
+b. assembly level
+c. low/machine level language
+
+
+add two numbers and display the result
+
+plan for application:
+way of representing logic: algorithm  and flowchart (digramatical representation)
+
+a. declare two "variables" to store values
+b. add those two values
+c. declare another "variable" to store the result
+d. print the result
+
+variables => name(identifiers) of memory blocks, where values can be stored temporarily during the time application is running
+
+variable => it is nothing but name of a container to store a value
+process  => a memory block assigned to the application (from RAM), so that application related data can be stored
+application related data will stored in memory blocks of that process
+we can pass the instruction to allcoate some memory blocks to store some values temporarily from our code written using some programming language
+
+operations:
+1. addition
+2. subtraction
+3. multiplication
+4. division
+5. square
+etc.
+
+
+function: lines of instruction to do something
+//addition instruction sets (code)
+//x and y = > variables to store passed values (arguments)
+//result=> a local (locally declared inside this function) variable, but it is not an argument
+function add(x, y)
+{
+	var result = x + y
+	alert(result)
+}
+
+//subtraction instruction sets (code)
+function subtract(x, y)
+{
+	var result = x + y
+   return result
+}
+
+//multiplication instruction sets (code)
+function multiply()
+{
+}
+
+//division instruction sets (code)
+function divide(x, y)
+{
+}
+
+add(x,y)
+	begin
+	
+	end
+
+function main(){
+	var a = 1123456789
+	var b = 20
+	//parameters (a, b)
+	add(a,b)
+	var subRes = subtract(a,b)
+	multiply()
+	divide(a,b)
+}
+
+data => information
+types of data: numerical, fractional numerical value, series of characters (string), character, boolean (0/1, true/false etc.)
+
+0/1
+=> 000, 001, 010, 011, 100, 101, 110, 111
+
+2^8 => 0 => 255
+
+2^64
+
+0 => 65535 (65536)
+
+1 bit
+1 byte = 8 bits
+
+2 bytes = 16 bits
+
+4 bytes = 32 bits
+
+
+data type => indicates what type of data should be stored in memory block and what size memopry block is required for that value to be stored
+int a = 1234
+long b = 12345678
+
+float f = 12.34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
