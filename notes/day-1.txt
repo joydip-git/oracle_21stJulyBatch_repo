@@ -6,6 +6,16 @@ d. code
 e. programming language
 f. programming language related terminologies: process, variable, data type, function etc.
 g. different types of programming language
+	1. procedural
+	2. OOP language
+h. declarative and imperative programming technique
+i. compiler and interpreter
+j. OOP language
+	 - class and object
+k. concurrent programming
+l. parallel programming
+m. concurrency
+n. synchronous and asynchronous programming model
 
 
 Tally is an application
@@ -167,6 +177,8 @@ num % 2 == 0
 
 functional/procedural: C
 	only procedures (functions)
+
+
 OOP language: Java, C#, C++
 	concept of class + functions
 
@@ -179,7 +191,7 @@ void getUserInput(){
 }
 
 
-class User
+struct User
 {
    long mobileNo;
    string name;
@@ -196,3 +208,43 @@ nehaUser.email=<value-from-the-email-textbox>;
 
 User akshayUser;
 
+Object     (real-time entity)
+Class      (Blueprint)
+
+class Car
+{
+	 string modelName;
+    string chasisNo;
+    bool   hasAC;
+    bool climateControl;
+    string color;
+    int seatingCapacity;
+
+    start(){}
+    stop(){}
+    accelerate(){}
+    putbreak(){}
+}
+
+what is compiler? compiler first of all checks entire code for any error (syntactical) and if found, it will not convert your code into either MLC or intermediate level code. If no error found, then the code will be converted into MLC or Byte-code/IL code. Turbo C/C++, Borland C/C++ compilers for C and C++, Java and C# compilers etc.
+
+what is interpreter? interpretes code line by line and executes. if any line has issue, only that line related error will be shown and further code inmterpretation will be stopped. the previous part of the code, works smoothly. JS engine in case of JS.
+
+
+what are the differences between compiler and interpreter?
+
+Car hondaCVZ = new Car();
+hondaCVZ.modelName="";
+hondaCVZ.chasisNo="";
+....
+
+hondaCVZ.start();
+hondaCVZ.stop();
+
+
+
+transaction:
+ACID => Atomicity, Consistency, Isolated, Durability
+
+a. debit amount from your a/c 3000
+b. credit amount into payee's a/c 3000
