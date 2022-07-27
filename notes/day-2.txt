@@ -76,5 +76,113 @@ C++ => object oriented programming language
 
 OOP and OOAD
 
+local variables: the variables that you declare inside a function in any programming language, i.e. variables that are local to the function
+
+person:
+	a. height
+	b. weight
+	c. color_complexion
+
+	a. talk
+	b. run
+	c. sleep
+	d. walk
+	e. listen
+
+akshat
+akshay
+
+
+class Person{
+   int height;
+	int weight;
+	string color;
+
+   void Talk(){}
+	void Run(){}
+	void Sleep(){}
+	.......
+}
+
+class: a blueprint to create real time objects (instances)
+object: a real time entity containing data (characterestics) and methods (functionalities). In OOP language, the instance/object is created through a blueprint (class), which defines which properties/caharacterestics/attributes and functionalities, an object must have.
+
+
+class = [data + methods] 
+   => encapsulation (insider capsule) 
+	=> abstraction (hiding data members => data abstraction and implementation abstraction => method implementation)
+
+access specifiers: some keywords (public, private etc.) which control accessibility of class members (data or methods)
+
+class Person{
+    //data members (global to all functionalities of the class)
+	//by using private keyword, I am hiding the name of data members
+    private String name;
+    private float height;
+    private float weight;
+    private String color;
+    
+    //constructor method:
+    //a special function to assign values to the data members (store values in memory blocks)
+    //name of the function should be same as that of the class
+    //the function must not return anything and unlike any other function should not have any return type at all (void/int etc.)
+    //this constructor function is called DURING (not before or after) object creation
+    //the following is a default constructor: the job of this default constructor function is to assign default values to the data members
+    //public Person(){
+        //name = null;
+        //height = 0.0F;
+        //weight = 0.0F;
+        //color = null;
+    //}
+    //constructor with parameters: parameterized constructor
+    public Person(String personName, float personHeight, float personWeight, String personColor){
+       
+        name = personName;
+        height = personHeight;
+        weight = personWeight;
+        color = personColor;
+        
+    }
+    //functionalities
+    // this method is publicly accessible, but I am hiding what code is written inside this method
+	// outsiders can call this method, but will not know what code is written inside
+    public void PrintInformation(){
+        System.out.println(name + " " + height + " " +" " + weight + " " + color);
+        //System.out.println(height);
+        //System.out.println(weight);
+        //System.out.println(color);
+    }
+}
+
+class HelloWorld {
+    static Person Create(String pname, float pheight, float pweight, String pcolor){
+        Person objAddress;
+        //objAddress = new Person();
+        objAddress = new Person(pname,pheight,pweight,pcolor);
+        return objAddress;
+    }
+    public static void main(String[] args) {
+        System.out.println("Hello, World!\n");
+        int x = 10;
+        
+        Person firstObjAddress = Create("Anil",5.7F,75F,"Fair");
+        Person secondObjAddress = Create("Sunil",5.5F,65F,"Pale");
+        
+        firstObjAddress.PrintInformation();
+        secondObjAddress.PrintInformation();
+        
+        //firstObjAddress.name="Anil";
+        //firstObjAddress.height=5.7F;
+        //firstObjAddress.weight=75;
+        //firstObjAddress.color="Fair";
+        
+        //secondObjAddress.name="Sunil";
+        //secondObjAddress.height=5.5F;
+        //secondObjAddress.weight=65;
+        //secondObjAddress.color="Pale";
+    }
+}
+
+
 
 
