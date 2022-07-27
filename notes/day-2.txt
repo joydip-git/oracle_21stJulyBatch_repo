@@ -14,7 +14,7 @@ Object Design and Programming
 ·         Polymorphism
 			 	- Method Overloading
 				- Method Overriding
-			 Specialization and Agregation
+			Specialization and Agregation
 ·         Associations
 ·         Delegation
 
@@ -218,6 +218,170 @@ CurrentBankAccount => BankAccount
 properties:    [extra properties: overdraft]
 functionality: [extra methods]
 
+Other Example:
+// Online Java Compiler
+class Employee{
+    
+    protected String name;
+    protected int id;
+    protected float basicPayment;
+    protected float daPayment;
+    protected float hraPayment;
+    
+    public float calculateSalary(){
+        
+    }
+}
+class Developer extends Employee{
+    private float incentivePayment;
+    
+    public Developer(){}
+    
+    public Developer(String nameValue, int idValue, float basicPayValue, float daPayValue, float hraPayValue, float incentivePayValue){
+        
+        name = nameValue;
+        id = idValue;
+        basicPayment = basicPayValue;
+        daPayment = daPayValue;
+        hraPayment = hraPayValue;
+        incentivePayment = incentivePayValue;
+    }
+    public float calculateSalary(){
+        return basicPayment+daPayment+hraPayment+incentivePayment;
+    }
+}
+class Hr extends Employee{
+    private float gratuityPayment;
+    
+    public Hr(){}
+    
+    public Hr(String nameValue, int idValue, float basicPayValue, float daPayValue, float hraPayValue, float gratuityPayValue){
+        
+        name = nameValue;
+        id = idValue;
+        basicPayment = basicPayValue;
+        daPayment = daPayValue;
+        gratuityPayment = gratuityPayValue;
+        hraPayment = hraPayValue;
+    }
+    public float calculateSalary(){
+        return basicPayment+daPayment+hraPayment+gratuityPayment;
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        Developer anilDevAddress = new Developer("anil",1,1000,2000,3000,4000);
+        float totalSalaryOfAnil = anilDevAddress.calculateSalary();
+        System.out.println(totalSalaryOfAnil);
+        
+        Hr sunilHrAddress = new Hr("sunil",2,2000,3000,4000,5000);
+        float totalSalaryOfSunil = sunilHrAddress.calculateSalary();
+        System.out.println(totalSalaryOfSunil);
+    }
+}
+
+
+Polymorphism: Multiple forms of the same thing
+
+method signature: <return-type> <method-name>(argument-list)
+
+A. Static/compile-time polymorphism: 
+a. function/method overloading: methods with same name, but different signature, in a class
+	1. number of arguments are different
+	2. data type of the arguments are different
+	3. the position or order of the arguments are different
+	Note: Though return type is also part of the signature of a method, but it does not play any role in differentiating the methods
+b. constructor overloading: mutiple constuctors in a class with different signature
+
+// Online Java Compiler
+class Person{
+    private String name;
+    private int id;
+    
+    //constructor overloading
+    //defaultr constructor
+    public Person(){
+        
+    }
+    //parameterized constructor
+    public Person(String nameValue, int idValue){
+        name = nameValue;
+        id= idValue;
+    }
+}
+class Calculation{
+    public void add(int a, int b){
+        System.out.println(a+b);
+    }
+    public void add(int a, int b, int c){
+        System.out.println(a+b+c);
+    }
+    public void add(int a, int b, float c){
+        System.out.println(a+b+c);
+    }
+    public void add(int a, float b, int c){
+        System.out.println(a+b+c);
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+		  Person p = new Person();
+		  Person p1 = new Person("abcd",1);
+
+        Calculation calc = new Calculation();
+        //caller
+		  calc.add(12,13);
+        calc.add(12,13,14.5F);
+    }
+}
+
+c. operator overloading: 
+same operator, depending on the tyep of operands, do different kind of job.
+
+int a = 10; int b = 20;
+int result = a + b; //30
+
+String firstName = "anil";
+String lastName = "mishra"
+String fullName = firstName + lastName; //anil mishra
+
+B. dynamic polymorphism: where you will have same method in base as well as in child, but which object has been created during runtime, will decide which method will be called
+1. involves minimum two classes: one base and a child
+2. there will be no signature difference between the base and child class methods (makes it difficult for the compiler to decide which method will be called)
+3. the difference between the methods lie in the implementation
+
+child will override base implementation
+Note: if the child do not have any new implementation, the base method will be invoked
+
+					Person: Cut();
+
+Butcher=>Person			HairStylist=>Person			FilmDirector=>Person
+---------------------------------------------------------------------------
+Cut(){}						Cut(){}								Cut(){}
+
+Butcher b = new Butcher();
+b.Cut();
+
+HairStylist h = new HairStylist();
+h.Cut();
+
+FilmDirector f = new FilmDirector();
+f.Cut();
+
+A method in a class which is declared without a body (implementation) is known as abstract method
+a class containing abstract method(s), is known as abstract class
+You can't create instance of an abstract class
+an abstract class can have non abstract methods too
+
+DataAccess (using this class like a template other classes)
+	public abstract void readData(); (Java)
+	public void readData=0; (C++)
+
+FileDataAccess => DataAccess
+		public void readData(){//code}
+
+OracleDataAccess => DataAccess
+		public void readData(){//code}
 
 
 
