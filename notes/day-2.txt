@@ -1,21 +1,20 @@
 OOP (Object Oriented Programming)
 -------------------------------------
 ·         Classes and Objects 
-·         OOP Principles
 ·         Instantiation
-·         Encapsulation
-·         Specialization
 ·         Instance Variables
-·         Class Variables
+·         Encapsulation and Abstraction
+·         Class Variables/data members
 ·         Constructors
-·         Instance Methods
-·         Class Methods
-·         Method Overloading
+·         Class Methods - Instance Methods
+
 Object Design and Programming
-·         Abstraction
+			 OOP Principles
 ·         Inheritance
 ·         Polymorphism
-·         Method Overriding
+			 	- Method Overloading
+				- Method Overriding
+			 Specialization and Agregation
 ·         Associations
 ·         Delegation
 
@@ -112,7 +111,11 @@ class = [data + methods]
    => encapsulation (insider capsule) 
 	=> abstraction (hiding data members => data abstraction and implementation abstraction => method implementation)
 
-access specifiers: some keywords (public, private etc.) which control accessibility of class members (data or methods)
+access specifiers: some keywords (public, private, protected etc.) which control accessibility of class members (data or methods)
+
+private: members declared with private access specifier, are accessible within the class ONLY
+protected: members declared with protected access specifier, are accessible within the that class and the child classes, ONLY.
+public: members declared with public access specifier, are accessible within the that class and the child classes as well as outside both (complete public access)
 
 class Person{
     //data members (global to all functionalities of the class)
@@ -182,6 +185,32 @@ class HelloWorld {
         //secondObjAddress.color="Pale";
     }
 }
+
+
+OOP Principles:
+---------------------------
+a. Encapsulation and Abstraction
+b. Inheritance
+c. Polymorphism
+
+
+Inheritance: it's way to aquire characterestics and functionalities from one class to another class.
+1. the one that you are inheriting from is "base/parent" class
+2. the one that you are inheriting to is "child/derived" class
+3. except constructors, all the members are inherited into child from base class
+4. if base class members are private, they are still inherited into the child class from base class, BUT the inherited members can't be accessed from inside the child class. in order to get that facility, declare base class members with protected access specifier.
+Usage: simply to introduce code re-usability
+Types: Major 3 types => Single-level/Simple, Multi-level, Multiple
+Note: Multiple inheritance is not supported in many languages, such as, Java, C#, JavaScript etc. and supported in languages like C++
+
+
+
+Savings 																						Current
+----------------------------------------------------------------------------------------
+properties
+functionality
+
+Savings: 
 
 
 
