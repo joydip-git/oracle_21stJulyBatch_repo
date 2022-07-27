@@ -203,14 +203,22 @@ Usage: simply to introduce code re-usability
 Types: Major 3 types => Single-level/Simple, Multi-level, Multiple
 Note: Multiple inheritance is not supported in many languages, such as, Java, C#, JavaScript etc. and supported in languages like C++
 
+BankAccount
+----------------------------------------
+properties:   acc_holder_name, acc_id, current_balance
+functionality: withdraw(), deposit()
 
-
-Savings 																						Current
+SavingsBankAccount => BankAccount																					
 ----------------------------------------------------------------------------------------
-properties
-functionality
+properties:    [extra properties: minimum_balance,  roi]
+functionality: [extra methods: calculateInterest()]
 
-Savings: 
+CurrentBankAccount => BankAccount			
+---------------------------------------------------------------------------
+properties:    [extra properties: overdraft]
+functionality: [extra methods]
+
+
 
 
 
