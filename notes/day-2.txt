@@ -1,0 +1,80 @@
+OOP (Object Oriented Programming)
+-------------------------------------
+·         Classes and Objects 
+·         OOP Principles
+·         Instantiation
+·         Encapsulation
+·         Specialization
+·         Instance Variables
+·         Class Variables
+·         Constructors
+·         Instance Methods
+·         Class Methods
+·         Method Overloading
+Object Design and Programming
+·         Abstraction
+·         Inheritance
+·         Polymorphism
+·         Method Overriding
+·         Associations
+·         Delegation
+
+Programming Language Constructs:
+a. architecture
+b. compilers or interpreters
+c. syntax
+d. language features
+
+Source code => compiler => machine level language code (CPU dependent)/intermediate language code (CPU independent) [will be placed inside an output file with extension .exe in case of executable application or .dll/.h/.tlb in case of library application]
+can contain single file/multiple files
+procedural language or OOP language
+built-in functionalities (part of library)
+	- functionality for printing output in the console
+	- functionality for accepting input from the console
+	- functionality for handling files
+	- functionality for concurrent programming
+
+applications: 
+- executable (Stand-alone) application => will have a main method
+- library application (reusable) application => will NOT have any main method
+
+calculation.h
+#include <stdio.h>
+
+int add(int a, int b){
+    printf ("%d",(a+b));
+}
+
+ui.c
+----------------------
+#include <stdio.h> /using System;/imports system;
+#include<calculaulation.h>
+
+void main(){
+ add(10,20);
+}
+
+
+void main(){
+   int a = 100;
+   getInformation();
+}
+void getInformation(){ 
+  int x = 10;
+//get some information about an employee 
+}
+
+problems with procedural programming:
+a. local variables of a function occupies memory block when the function is getting executed. But they are erased as soon as the function is over. only main related local variables stay as long as the application is running.
+b. the values of local variables are subject to mutation, which is bit problematic related to security
+c. there is no proper way to group co-related data (though C language has a technique, known as structure to do that)
+
+
+name, email, phone, company, skills
+
+C++ => object oriented programming language
+
+OOP and OOAD
+
+
+
