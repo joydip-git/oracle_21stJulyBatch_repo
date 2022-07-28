@@ -87,3 +87,42 @@ class Calculation{
 
 //<access-specifier> <return-value-data-type> <method-name>(<data-type-of-arg> <arg-name>,....){
 //}
+
+
+data types:
+------------------------------------------
+a. primitive										b. non-primitive
+byte: non-fractional number (1 byte => -128 to 127)      String, Array etc.
+short: non-fractional number (2 bytes => -32768 to 32767)
+int: non-fractional number (4 bytes)
+long: non-fractional number (8 bytes)
+
+float: fractional (4 bytes)
+double: fractional (8 bytes)
+
+boolean: true or false (1 bit)
+
+char: one character (2 bytes/16 bit unicode character=> \u0000 or 0 to \uffff or 65535)
+
+Unicode: Universal international standard character encoding
+
+ASCII (American Standard Code for Information Interchange): USA 
+ISO 8859-1: Western European Language
+KOI-8: Russian
+GB18030 and BIG-5: for chinese
+
+Unicode: 2 bytes
+\u0000 is the lowest range in Unicode
+\uFFFF is the highest range in Unicode
+
+char ch = 'a';
+boolean b = true/false;
+
+float f = 12.34f;
+double d = 12.34d; or double d = 12.34;
+
+operators:
+-------------------------------------------
+
+control flow statement:
+-------------------------------------------

@@ -1,0 +1,7 @@
+Update First App:
+----------------------------------
+in the existing FirstApp application, in the Calculation.java file, add 3 more functions:
+subtract, multiply and divide
+all these methods will accept two arguments of type int and returns the calculated value (subtraction or division or multiplication result) of type int
+
+call those 4 methods from main method in Program.java file
