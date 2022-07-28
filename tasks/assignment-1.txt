@@ -8,3 +8,9 @@ the file must contain a class of the same name, with a main method
 	b. arguments: 1 (String) 
    c. return type: String (returns a String "Welcome "+<argument-ofthe-function>)
 5. call this method from the main method and pass some name to the name and display the output of the method
+
+console:
+---------------------------
+enter 1st number: 30
+enter 2nd number: 40
+70
