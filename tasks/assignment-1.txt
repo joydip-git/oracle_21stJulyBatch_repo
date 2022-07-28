@@ -1,0 +1,10 @@
+Create an application to greet a person
+1. create a new Java Project: WelcomeApp
+2. add a new file in "src" folder of the project (choose the name of the file)
+the file must contain a class of the same name, with a main method
+3. now, add one more file in the "src" directory, named as, Welcome.java
+4. in this class create a method, which accepts name of a person as argument and returns an welcome string, greeting the person
+	a. name: greetPerson
+	b. arguments: 1 (String) 
+   c. return type: String (returns a String "Welcome "+<argument-ofthe-function>)
+5. call this method from the main method and pass some name to the name and display the output of the method
