@@ -1,0 +1,89 @@
+OOP language: Java
+
+James Gosling 1995
+
+Mike Sheridan, Patrick Naughton
+Green Team => Greentalk .gt
+Oak
+Java
+
+.NET => Net Enabled Technologies (framework)
+C#, VB.NET,....
+
+1996 => JDK 1.0
+
+Application:
+1. desktop application: acrobat reader
+2. web application: irctc.co.in
+3. Enterprise application:
+4. mobile
+5. Embded system
+6. smart card
+7. robotics
+8. Games
+
+types of application:
+1. standalone application
+2. web application: servlet, jsp, struts, spring, hibernate, JSF etc.
+3. enterprise application: distributed application => EJB
+4. mobile application: Android and Java ME
+
+
+Java Platform:
+1. Java SE (standard edition): Java Programming platform
+java.lang, java.io, java.net, java.uitl, java.sql, java.math (APIs)
+
+2. Java EE (enterprise edition): Servlet, JSP, Web Services, EJB, JPA etc..
+
+3. Java ME (micro edition)
+4. Java FX
+
+
+IDE: Integrated Development Environment
+Eclipse, NetBeans
+
+
+
+//code sample:
+//class name should follow pascal casing
+//class name should not use any keyword, like, Class, as the prefix or suffix with the class name
+//try not to use digits or special characters in class name
+//name of the class should be a noun, neither a verb nor an adjective
+//method name: should following camel casing (first letter of first word in lower, followed by first letter of every other word in uppercase)
+//name of the method should be a verb, neither a noun nor an adjective
+//variable: name should be in camel casing style. name of the variable should be a noun, neither a verb nor an adjective
+
+class Program{
+	//static=> in order to invoke/access the member you DO NOT NEED TO CREATE AN INSTANCE of the class
+	public static int main(String[] args){
+		System.out.println("Welcome to Java");
+
+		//creating instance of the class
+		//Calculation calcObjAddress = new Calculation();
+
+		//calling the addNumbers method
+		//pass two values (of type int) to the method, since it demands tow parameters to be passed
+		//since the method returns a value, declare a variable to store the return value of the method
+		int result;
+		//return value of the method is assigned to the variable "result"
+		//result = calcObjAddress.addNumbers(10,20);
+		result = Calculation.addNumbers(10,20);
+		System.out.println(result);
+		return 0;
+   } 
+}
+
+class Calculation{
+   //public Calculation(){}
+
+	//instance method: to call this method, create an instance of the class first and then call the method with the instance variable
+	//static method: to call this method, NO NEED TO CREATE AN INSTANCE OF THJE CLASS. just use class name to call that method.
+	public static int addNumbers(int first, int second){
+		int additionResult;
+		additionResult = first + second;
+		return additionResult;
+   }
+}
+
+//<access-specifier> <return-value-data-type> <method-name>(<data-type-of-arg> <arg-name>,....){
+//}
