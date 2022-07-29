@@ -55,3 +55,16 @@ a++ => a = a+1
 
 int y=0;
 y +=a;
+
+control flow statements:
+a. Decision making statements:
+	i. if statement, if...else statements, nested if..else 
+	ii. switch statement
+b. loop statements:
+	i. while loop
+	ii. do...while loop
+	iii. for loop
+	iv. for-each loop
+c. Jump statements:
+	i. break
+	ii. continue

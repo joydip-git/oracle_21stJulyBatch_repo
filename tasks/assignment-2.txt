@@ -4,4 +4,25 @@ in the existing FirstApp application, in the Calculation.java file, add 3 more f
 subtract, multiply and divide
 all these methods will accept two arguments of type int and returns the calculated value (subtraction or division or multiplication result) of type int
 
-call those 4 methods from main method in Program.java file
+call those 4 methods from main method in Program.java file, based on choice from user
+
+1. print the choices to the user
+2. ask user to enter choice
+3. based on the entered choice, call a method (add/subtract/multiply/divide). before that ask user to enter two numbers
+Note: in divide method always divide highest value by the lowest value, no matter which one is the first and which one is the second argument
+
+console view:
+
+MENU
+-----------------
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+
+Enter choice[1/2/3/4]: 1/2/3/4
+
+Enter 1st value: 4
+Enter 2nd Value: 12
+
+Addition result: 16/Subtraction result: -8/Multiplication result: 48/Division result: 3
