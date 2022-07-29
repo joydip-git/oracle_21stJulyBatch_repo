@@ -1,0 +1,21 @@
+1. basics of Java (Java Fundamentals)
+2. OOP in Java
+3. post-OOP in Java (exception handling)
+
+
+1. creating a basic application
+2. understand the application coding, compile, run etc. through notepad
+3. Execution cyle of Java
+4. how to write methods including arguments and return values, call methods
+5. static and instance methods of class
+6. main method
+7. how to create application in Eclipse
+8. data types - primitive and non-primitive
+
+9. more on data types: reference and value type
+10. operators
+11. control flow statements
+12. array
+
+value type: generally the primitive types, since they directly store values in their memory block, are known as value types
+reference type: generally the non-primitive types, since they do not store the value (like, an object or string data etc.) in the memory blocks directly. rather they store the address of those values (which are stored in heap memory region)
