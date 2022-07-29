@@ -10,6 +10,7 @@ call those 4 methods from main method in Program.java file, based on choice from
 2. ask user to enter choice
 3. based on the entered choice, call a method (add/subtract/multiply/divide). before that ask user to enter two numbers
 Note: in divide method always divide highest value by the lowest value, no matter which one is the first and which one is the second argument
+4. this calculation should run as long as user does not want to continue
 
 console view:
 
@@ -20,9 +21,63 @@ MENU
 3. Multiply
 4. Divide
 
-Enter choice[1/2/3/4]: 1/2/3/4
+Enter choice[1/2/3/4]: 1
 
 Enter 1st value: 4
 Enter 2nd Value: 12
 
-Addition result: 16/Subtraction result: -8/Multiplication result: 48/Division result: 3
+Addition result: 16
+
+Continue?[y/Y/N/N]: y
+
+MENU
+-----------------
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+
+Enter choice[1/2/3/4]: 2
+
+Enter 1st value: 4
+Enter 2nd Value: 12
+
+Subtraction result: -8
+
+Continue?[y/Y/N/N]: Y
+
+MENU
+-----------------
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+
+Enter choice[1/2/3/4]: 3
+
+Enter 1st value: 4
+Enter 2nd Value: 12
+
+Multiplication result: 48
+
+Continue?[y/Y/N/N]: y
+
+MENU
+-----------------
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+
+Enter choice[1/2/3/4]: 4
+
+Enter 1st value: 4
+Enter 2nd Value: 12
+
+Division result: 3
+
+Continue?[y/Y/N/N]: n/N
+
+
+
+

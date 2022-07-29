@@ -41,7 +41,8 @@ public class Program {
 
 	static void makeDecisionUsingSwitch() {
 
-		//possible case value data types: int, short, byte, long, char, enumeration, String (>=Java 7) 
+		// possible case value data types: int, short, byte, long, char, enumeration,
+		// String (>=Java 7)
 		int choice = 4; // 1/2/3
 		switch (choice) {
 		case 1:
@@ -79,7 +80,7 @@ public class Program {
 			break;
 		}
 
-		String calcType="add"; //add/subtract/multiply/divide
+		String calcType = "add"; // add/subtract/multiply/divide
 		switch (calcType) {
 		case "add":
 			break;
@@ -104,10 +105,32 @@ public class Program {
 		 */
 	}
 
+	static void loopUsingWhile() {
+
+		int a=5;
+		
+		//entry-controlled loop
+		while(a<0) {
+			System.out.println("hello");
+			a--;
+		}
+	}
+
+	static void loopUsingDoWhile() {
+
+		int a=5;
+		
+		//exit-controlled loop
+		do {
+			System.out.println("hello");
+			a--;
+		}while(a<0);
+	}
 	public static void main(String[] args) {
-
-		makeDecisionUsingSwitch();
-
+		//makeDecisionUsingIfElse();
+		// makeDecisionUsingSwitch();
+		//loopUsingWhile();
+		loopUsingDoWhile();
 	}
 
 }
