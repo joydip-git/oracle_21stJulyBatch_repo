@@ -1,25 +1,34 @@
 import java.util.Scanner;
 
-public class Program {
+public class Program {	
+	public static void main(String[] args) {
+		Scanner scannerObj = new Scanner(System.in);
+		char toContinue = 'n';
 
-	public static void main(String[] args) {	
-		
-		//accept two numbers from console
-		Scanner scanner = new Scanner(System.in);
-		
-		System.out.print("enter first number: ");
-		int firstNumber = scanner.nextInt();
-		
-		System.out.print("enter second number: ");
-		int secondNumber = scanner.nextInt();		
-		
-		scanner.close();
-		
-		//pass those two numbers to addNumbers method
-		Calculation calcObjAddress = new Calculation();
-		int output = calcObjAddress.addNumbers(firstNumber, secondNumber);
-		System.out.println("Result: "+output);
-		
-		
-	}	
+		do {
+			// 1. print the menu
+			UserInterfaceUtility.printMenu();
+
+			// 2. ask user for choice
+			int choiceOfOperation = UserInterfaceUtility.getChoice(scannerObj);
+
+			// 3. ask to enter values
+			int firstNumber = UserInterfaceUtility.getValue(scannerObj);
+			int secondNumber = UserInterfaceUtility.getValue(scannerObj);
+
+			// 4. invoke operation based on choice
+			UserInterfaceUtility.invokeOperation(choiceOfOperation, firstNumber, secondNumber);
+
+			// 5. ask for decision to continue. 			
+			toContinue = UserInterfaceUtility.getDecision(scannerObj);
+			
+			//6. if user enters choice in upper case, 
+			//convert the choice in lower case
+			if (Character.isUpperCase(toContinue))
+				toContinue = Character.toLowerCase(toContinue);
+
+		} while (toContinue == 'y');
+
+		scannerObj.close();
+	}
 }
