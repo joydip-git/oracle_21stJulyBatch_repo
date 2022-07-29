@@ -19,3 +19,39 @@
 
 value type: generally the primitive types, since they directly store values in their memory block, are known as value types
 reference type: generally the non-primitive types, since they do not store the value (like, an object or string data etc.) in the memory blocks directly. rather they store the address of those values (which are stored in heap memory region)
+
+
+operators:
+type based on functionality:
+	arithmetic: +, -, *, /, %
+	relational: 
+		comparison: >, <, >=, <=, instanceof
+		equality: ==, !=
+	logical: 
+		AND: &&, 
+		OR: ||
+	assignment: =, +=, -=, *=, /=, %=, &=, ^=, |=, <<=, >>=, >>>=
+	shift: <<, >>, >>>
+	bitwise: 
+		AND: &
+		exclusive OR: ^
+		inclusive OR: |
+
+types based on number of operands:
+unary:
+	postfix: expr++, expr--
+	prefix: ++expr, --expr, +expr, -expr, ~, !
+binary: expr1 + expr2, etc.
+ternary: ?:
+
+int a = 10
+int b = 20
+int c = a > b? a:b;
+
+int x = a + b;
+
+a++ => a = a+1
+--b=> b = b-1
+
+int y=0;
+y +=a;
