@@ -107,10 +107,10 @@ public class Program {
 
 	static void loopUsingWhile() {
 
-		int a=5;
-		
-		//entry-controlled loop
-		while(a<0) {
+		int a = 5;
+
+		// entry-controlled loop
+		while (a < 0) {
 			System.out.println("hello");
 			a--;
 		}
@@ -118,19 +118,37 @@ public class Program {
 
 	static void loopUsingDoWhile() {
 
-		int a=5;
-		
-		//exit-controlled loop
+		int a = 5;
+
+		// exit-controlled loop
 		do {
 			System.out.println("hello");
 			a--;
-		}while(a<0);
+		} while (a < 0);
 	}
+
+	static void loopUsingFor() {
+		/*
+		 * for (int x = 0; x < 5; x++) { System.out.println("hello"); }
+		 */
+		//initialization int x= 5
+		//condition checking x>0
+		//increment or decrement of the variable value
+		//the variable (x) is local to for loop
+		//you can't access the variable local to for loop from outside for loop
+		
+		for (int x = 5; x > 0; x--) {
+			System.out.println("hello");
+		}
+		//System.out.println(x);
+	}
+
 	public static void main(String[] args) {
-		//makeDecisionUsingIfElse();
+		// makeDecisionUsingIfElse();
 		// makeDecisionUsingSwitch();
-		//loopUsingWhile();
-		loopUsingDoWhile();
+		// loopUsingWhile();
+		// loopUsingDoWhile();
+		loopUsingFor();
 	}
 
 }
