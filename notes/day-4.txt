@@ -68,3 +68,16 @@ b. loop statements:
 c. Jump statements:
 	i. break
 	ii. continue
+
+comments in Java:
+1. makes your code more readable and easily understandable by providing extra details through comments
+2. maintian you code and find errors easily
+3. provide explanation behind your action
+
+A. code comments:
+	a. single-line comment (//)
+	b. multi-line comment (/* code */)
+B. documentation comment
+
+Array:
+int a = 100;

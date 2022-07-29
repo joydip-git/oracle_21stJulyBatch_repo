@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * <h2>Utility class for UI</h2>
+ * @author satarupa
+ *
+ */
 public class UserInterfaceUtility {
 	public static void printMenu() {
 		System.out.println("-------------------MENU-------------------");
@@ -8,6 +13,11 @@ public class UserInterfaceUtility {
 
 	public static int getChoice(Scanner scanner) {
 		System.out.print("Enter Choice[1/2/3/4]: ");
+		
+	/* scanner reads the value
+	nextInt() method converts the value in integer format
+	and returns the integer value  */
+		
 		int choice = scanner.nextInt();
 		return choice;
 	}

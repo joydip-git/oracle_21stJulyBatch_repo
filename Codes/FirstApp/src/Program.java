@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * Main user interface, the entry point
+ * @author satarupa
+ *
+ */
 public class Program {	
 	public static void main(String[] args) {
 		Scanner scannerObj = new Scanner(System.in);

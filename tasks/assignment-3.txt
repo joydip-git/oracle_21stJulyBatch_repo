@@ -1,0 +1,6 @@
+1. create an arryay to store some numbers (integers)
+   a. sort the elements of the array in ascending order or descending order based on user choice
+   b. find out all the neumbers which are even in that array and display them
+
+
+   
