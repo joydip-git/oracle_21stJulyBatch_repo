@@ -6,6 +6,8 @@ methods: to calculate total salary
 	return type: float
 
 2. from main method, use this class to create few instances
-	ask user how many instances to create
-   create instance
-   call method to calculate salary and print the salary
+	a. ask user how many instances to create
+	b. create an array to store references of the instances of the employees
+   c. create instances and store each of them in the array
+   d. iterate through the array and pick up one employee reference at a time. call method to calculate salary and print the salary along with the name of the employee
+   format: <emp-name> has salary of <salary-value>

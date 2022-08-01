@@ -3,3 +3,82 @@
 	b. data members
 	c. constructor
 	d. methods
+   e. getter and setter
+
+sample class:
+//access specifier of the class => public (any file in this application as well as
+//some other application too can access this class
+public class Person {
+	// data members
+	private String firstName;
+	private String lastName;
+	private String address;
+	private float salary;
+
+	// constructors
+	// default
+	public Person() {
+
+	}
+
+	// parameterized constructor
+	// during object creation, call this constructor and pass the necessary values
+	// the values will be assigned to the data members
+	public Person(String firstName, String lastName, String address, float salary) {
+		
+		//this keyword refers the current instance
+		//you are using this keyword to access data members/methods of the class
+		//here it is needed to differentiate between the class data member and the
+		//arguments of the constructor method
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.salary = salary;
+	}
+	
+	//setter-getter for firstName
+	
+	//getter
+	public String getFirstName() {
+		return firstName;
+	}
+	//setter
+	public void setFirstName(String updatedFirstName) {
+		firstName = updatedFirstName;
+	}
+	
+	//setter-getter for lastName
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String updatedLasttName) {
+		firstName = updatedLasttName;
+	}
+	
+	//setter-getter for address
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String updatedAddress) {
+		address = updatedAddress;
+	}
+	
+	//setter-getter for salary
+	public float getSalary() {
+		return salary;
+	}
+	public void setSalary(float updatedSalary) {
+		salary = updatedSalary;
+	}
+	
+	//getter for returning full name (first and last name together)
+	public String getFullName() {
+		return this.firstName + " " + lastName;
+	}
+
+	
+	public String getFullInformation() {
+		return this.getFullName() + " " + address + " " + salary;
+	}
+}
+
