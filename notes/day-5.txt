@@ -82,3 +82,37 @@ public class Person {
 	}
 }
 
+		X
+common data
+common methods
+
+A						B
+uncommon data	 uncommon data
+uncommon methods uncommon methods
+
+					X
+				String name
+
+A									B
+----------------------------------------
+int value;					float data;
+
+
+private: members are accessible within the class itself, where you declared those as members
+public: members are accessible within the class itself as well as from outside the class, too (such as with object reference, from inherited/child class)
+protected: members are accessible within the class itself as well as from within the derived/child class of that class
+
+constructor execution cycle:
+when you call any constructor of child class [default or parameterized], while creating instance of child class, the default constructor of the base class gets called, too, by default.
+
+why???
+a child class is collection of two types of members: members, inherited from base class and its own members. the base class default constructor gets called, because base class's members, inherited in the child class, have to be initialized and that's the job of base class constructor.
+
+invoking base class constructors:
+you can invoke a particular constructor of the base class using super keyword, from any constructor of the child class.
+invoking default ctor of base class: super()
+invoking parameterized ctor of base class: super(parameters....)
+
+
+
+
