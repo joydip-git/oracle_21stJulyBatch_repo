@@ -1,0 +1,11 @@
+1. create a class to represent an employee
+data: name, id, basicPayment, daPayment, hraPayment
+constructors: default and parameterized (for all the data members)
+methods: to calculate total salary
+	arguments: None
+	return type: float
+
+2. from main method, use this class to create few instances
+	ask user how many instances to create
+   create instance
+   call method to calculate salary and print the salary
