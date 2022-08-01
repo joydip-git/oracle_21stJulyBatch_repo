@@ -1,13 +1,28 @@
 1. create a class to represent an employee
-data: name, id, basicPayment, daPayment, hraPayment
-constructors: default and parameterized (for all the data members)
-methods: to calculate total salary
+	data: name, id, basicPayment, daPayment, hraPayment
+	constructors: default and parameterized (for all the data members)
+	methods: to calculate total salary
 	arguments: None
 	return type: float
 
-2. from main method, use this class to create few instances
+2. create two child classes of employee:
+	a. developer:
+	data: name, id, basicPayment, daPayment, hraPayment, incentivePayment
+	constructors: default and parameterized (for all the data members)
+	methods: to calculate total salary
+	arguments: None
+	return type: float
+
+	b. hr: 
+   data: name, id, basicPayment, daPayment, hraPayment, gratuityPayment
+	constructors: default and parameterized (for all the data members)
+	methods: to calculate total salary
+	arguments: None
+	return type: float
+
+3. from main method, use this class to create few instances
 	a. ask user how many instances to create
-	b. create an array to store references of the instances of the employees
+	b. create an array to store references of the instances of the hr and developer
    c. create instances and store each of them in the array
-   d. iterate through the array and pick up one employee reference at a time. call method to calculate salary and print the salary along with the name of the employee
+   d. iterate through the array and pick up one employee (eithet hr or developer) reference at a time. call method to calculate salary and print the salary along with the name of the employee
    format: <emp-name> has salary of <salary-value>

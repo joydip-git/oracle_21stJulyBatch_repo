@@ -18,13 +18,12 @@ public class Trainer extends Person {
 		// TODO Auto-generated constructor stub
 		System.out.println("[Trainer] default ctor");
 	}
-	
+
 	public Trainer(String firstName, String lastName, String address, float salary, String domain, String subjects[]) {
-		super(firstName, lastName, address, salary);		
-		System.out.println("[Trainer] parameterized ctor");	
+		super(firstName, lastName, address, salary);
+		System.out.println("[Trainer] parameterized ctor");
 		this.domain = domain;
 		this.subjects = subjects;
-				
 	}
 
 	/**
@@ -55,4 +54,9 @@ public class Trainer extends Person {
 		this.subjects = subjects;
 	}
 
+	@Override
+	public String showInformation() {
+		String partialInfo = super.showInformation();
+		return partialInfo + " " + domain;
+	}
 }

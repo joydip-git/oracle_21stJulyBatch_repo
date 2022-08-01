@@ -113,6 +113,19 @@ you can invoke a particular constructor of the base class using super keyword, f
 invoking default ctor of base class: super()
 invoking parameterized ctor of base class: super(parameters....)
 
+super keyword helps you access base class members from child class, explicitly
+such as, you can call base class (any) constructor from child class explicitly
+you can invoke public members of base class (suc as methods/gette-setters etc.) even from child class
+
+when you create a instance of child class, you can save the reference of that instance in a variable of
+	a. base class (up-casting):
+			in this case, the members of base class, available in child class instance are accessible
+          Note: in case of dynamic polymorphism, though child class method will be invoked, NOT base class method
+	b. child class itself
+			in this case, both the members of base as well as child class, available in child class instance are accessible
+
+
+
 
 
 
