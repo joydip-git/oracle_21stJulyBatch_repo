@@ -18,19 +18,19 @@ customers
 		addresses
 			order-address
 				address
-				doorno (1)
-				street-no or street-name (optionl-1)
-				area (1)
-				city (1)
-				state (1)
-				country (1)
-				zip-code or pin-code (1)	
+					doorno (1)
+					street-no or street-name (optionl-1)
+					area (1)
+					city (1)
+					state (1)
+					country (1)
+					zip-code or pin-code (1)	
 			delivery-address
 				address
-				doorno (1)
-				street-no or street-name (optionl-1)
-				area (1)
-				city (1)
-				state (1)
-				country (1)
-				zip-code or pin-code (1)	
+					doorno (1)
+					street-no or street-name (optionl-1)
+					area (1)
+					city (1)
+					state (1)
+					country (1)
+					zip-code or pin-code (1)	

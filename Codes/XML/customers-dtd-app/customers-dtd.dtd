@@ -1,0 +1,25 @@
+<!ELEMENT customers (customer+)>
+<!ELEMENT customer (name,contactinfo,addresses)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT contactinfo (email,mobile-no,alternate-mobile-no,landline?,address+)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT mobile-no (#PCDATA)>
+<!ELEMENT alternate-mobile-no (#PCDATA)>
+<!ELEMENT landline (#PCDATA)>
+<!ELEMENT address (doorno,street,area,city,state,country)>
+<!ELEMENT doorno (#PCDATA)>
+<!ELEMENT street (#PCDATA|street-no|street-name)*>
+<!ELEMENT street-no (#PCDATA)>
+<!ELEMENT street-name (#PCDATA)>
+<!ELEMENT area (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT addresses (order_address,delivery_address)>
+<!--<!ELEMENT order-address (address)>-->
+<!ELEMENT order_address (address?)>
+<!ELEMENT delivery_address (address?)>
+<!ATTLIST customer customerid ID #REQUIRED>
+<!ATTLIST address address_id ID #REQUIRED>
+<!ATTLIST order_address address_id IDREF #IMPLIED>
+<!ATTLIST delivery_address address_id IDREF #IMPLIED>

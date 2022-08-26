@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="./customers-dtd.dtd" type="application/xml-dtd"?>
+<customers>
+    <customer customerid="c100">
+        <name>joydip</name>
+        <contactinfo>
+            <email>abcd@gmail.com</email>
+            <mobile-no>9090909090</mobile-no>
+            <alternate-mobile-no>9191919191</alternate-mobile-no>
+            <address address_id="a1">
+                <doorno>112</doorno>
+                <street>
+                    <street-no>2nd Main</street-no>
+                </street>
+                <area>ECity</area>
+                <city>BLR</city>
+                <state>KAR</state>
+                <country>IND</country>
+            </address>
+            <address address_id="a2">
+                <doorno>111</doorno>
+                <street>
+                    <street-name>Picadelly street</street-name>
+                </street>
+                <area>HSR</area>
+                <city>BLR</city>
+                <state>KAR</state>
+                <country>IND</country>
+            </address>
+        </contactinfo>
+        <addresses>
+            <order_address address_id="a1" />
+            <delivery_address>
+                <address address_id="d1">
+                    <doorno>110</doorno>
+                    <street>
+                        <street-no>3rd Main</street-no>
+                    </street>
+                    <area>Guindy</area>
+                    <city>Chennai</city>
+                    <state>TN</state>
+                    <country>IND</country>
+                </address>
+            </delivery_address>
+        </addresses>
+    </customer>
+    <customer customerid="c101">
+        <name>joydip</name>
+        <contactinfo>
+            <email>abcd@gmail.com</email>
+            <mobile-no>9090909090</mobile-no>
+            <alternate-mobile-no>9191919191</alternate-mobile-no>
+            <address address_id="a3">
+                <doorno>112</doorno>
+                <street>
+                    <street-no>2nd Main</street-no>
+                </street>
+                <area>ECity</area>
+                <city>BLR</city>
+                <state>KAR</state>
+                <country>IND</country>
+            </address>
+        </contactinfo>
+        <addresses>
+            <order_address address_id="a3" />
+            <delivery_address address_id="a3" />
+        </addresses>
+    </customer>
+</customers>
