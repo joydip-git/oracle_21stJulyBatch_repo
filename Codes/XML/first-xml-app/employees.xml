@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-model href="file.dtd" type="application/xml-dtd"?> -->
+<!-- prologue -->
+
+<!-- XML element declarations starting with root element -->
+<employees>
+    <employee id="100">        
+        <name>Aarohi</name>
+        <salary>1000</salary>
+    </employee>
+    <employee id="101">
+        <name>Neha</name>
+        <salary>2000</salary>
+    </employee>
+</employees>

@@ -1,0 +1,94 @@
+XML:
+Extensible Markup Language
+Text-based markup language
+data-describing language, it does not describe how to display data (which is the job of HTML), rather than, it defines data
+
+HTML: designing (design markup/design formatting)
+
+XML tags: user-defined tags
+purpose: define a data structrure, used to store and oragnize data
+
+characterestics:
+a. XML is extensible
+b. XML carries/represents data, does not represent it
+c. XML is public/open standard (developed by w3c)
+
+
+Usgaes:
+configuration of web applications using xml
+as medium of exchange of data between two parties
+easily offload and reload data into database
+this XML data can be presented by any way necessary
+can be easily merged with stylesheets
+any type of data can be expressed in the form of XML
+
+
+
+XML file:
+	syntax rules:
+		XML declaration
+		references (a DTD/Schema)
+		tags or elements or nodes 
+		attributes
+		texts
+
+	XML declaration rules:
+	 - is case sensitive, <?xml...?>, "xml" should be in lower case
+	 - first statement in XML file
+	 - if XML is being used as medium of data transfer between the parties over HTTP protocol, then HTTp protocol can override the value of encoding
+
+	references declaration:
+		reference to XML schema or DTD file
+		should be after the XML decalartion and before root element
+
+	elements/tags/nodes:, 
+		if child element or text: <element>....</element>
+	   if no child element or text (empty tag): <elementname />
+		elements are case-sensitive <employee> different from <Employee>
+
+	nesting elements: children elements must not overlap
+	<employees>
+			<employee id="100">
+					<name>...</name>
+			<employee id="101">
+					<name>...</name>
+					<salary>...</salary>
+			<salary>2000</salary>
+			</empoyee>
+			</employee>
+	</employees>
+
+	attributes:
+		key-value (name-value) pair
+		depicts a property of an element
+		case sensitive
+		attribute names are not mentioned in quotes
+		same attribute can be used twice with an element
+
+	
+
+	XML References:
+		>,<,& etc.
+
+		6>3
+
+		entity reference: &name; where name is predfined string of text and/or markup
+		example: &lt; &gt; &amp; &copy; &apos; &quot;
+		6 &gt; 3
+
+		character reference: &#number; => where number is a number value which represents a unicode character
+		&#65; => A
+
+
+		A.document prologue => xml declaration + reference declaration => 
+		B.elements section
+		
+
+
+	
+	
+
+
+
+
+
