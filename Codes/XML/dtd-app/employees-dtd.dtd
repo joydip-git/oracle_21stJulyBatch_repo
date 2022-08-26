@@ -1,0 +1,14 @@
+<!ELEMENT products (product+)>
+<!ELEMENT product (name,price,description,ISBN,reviews, manufacturer, company?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT ISBN (ISBN-8 | ISBN-10)>
+<!ELEMENT ISBN-8 (#PCDATA)>
+<!ELEMENT ISBN-10 (#PCDATA)>
+<!ELEMENT reviews (review*)>
+<!ELEMENT review (#PCDATA|comment|reviewText)*>
+<!ELEMENT comment (#PCDATA)>
+<!ELEMENT reviewText (#PCDATA)>
+<!ELEMENT manufacturer ANY>
+<!ELEMENT company (#PCDATA)>

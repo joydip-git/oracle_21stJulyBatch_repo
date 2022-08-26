@@ -136,8 +136,38 @@ XML file:
 
 	namespaces:
 	definitions of element and attribute
+
+
+	XML files:
+	a. Well formed: general rules of XML has been followed
+	b. Valid: when the XML document stands corrected/validated against a DTD
+	A well-formed document is not necessarily valid, but a valid document is an well-formed document
+
+
+	DTD vs Schema:
+	-------------------------
+	DTD does not support namespace, which schema file does
+	It only supports only the text string type of data
+	It does not use object-oriented
+
+
+	DTD:
+	elements
+	attributes
+	entities
 	
 
+	element contents:
+		empty
+		element(s)
+		mixed content
+		any content
+
+	occurrences:
+		ele+: 1 or more than 1
+		ele*: 0 or more times
+		eleś: 0 or 1 time
+		|: either of the child elements (child1|child2)
 
 	
 			

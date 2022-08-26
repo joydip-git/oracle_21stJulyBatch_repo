@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE products SYSTEM "./employees-dtd.dtd">
+<!-- <!DOCTYPE root-element 
+[
+
+]> -->
+<products>
+    <product>
+        <name>Dell XPS 15</name>
+        <price>120000</price>
+        <description>new laptop from dell</description>
+        <ISBN>
+            <ISBN-10>1234567890</ISBN-10>
+        </ISBN>
+        <reviews>
+            <review>
+                Nice laptop
+            </review>
+            <review>
+                <comment>
+                    superb performance
+                </comment>
+            </review>
+            <review>
+                <reviewText>
+                    worth money
+                </reviewText>
+            </review>
+        </reviews>
+        <manufacturer>
+            <company>
+                Hitachi
+            </company>
+        </manufacturer>
+    </product>
+</products>
