@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="./products-schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<products>
+    <product>
+        <id>100</id>
+        <name>dell xps</name>
+        <price>123.45</price>
+        <description>new laptop from dell</description>
+        <rating>4.5</rating>
+    </product>
+    <product>
+        <id>100</id>
+        <name>dell xps</name>
+        <price>123.45</price>
+        <description>new laptop from dell</description>
+        <rating>4.5</rating>
+    </product>
+    <product>
+        <id>100</id>
+        <name>dell xps</name>
+        <price>123.45</price>
+        <description>new laptop from dell</description>
+        <rating>4.5</rating>
+    </product>
+</products>

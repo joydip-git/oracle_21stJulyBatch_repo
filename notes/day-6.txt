@@ -45,6 +45,8 @@ XML file:
 		if child element or text: <element>....</element>
 	   if no child element or text (empty tag): <elementname />
 		elements are case-sensitive <employee> different from <Employee>
+		element name can contain alphanumeric values. 
+		punctuation marks allowed: -, _, .
 
 	nesting elements: children elements must not overlap
 	<employees>
@@ -82,6 +84,63 @@ XML file:
 
 		A.document prologue => xml declaration + reference declaration => 
 		B.elements section
+
+
+	standalone attribute:
+		yes or no
+		yes: document does not rely on any external file (DTD)
+		no: document does rely on any external file (DTD) 
+
+		default: no
+	
+	xml declaration possibilities:
+	<?xml version="1.0" ?>
+	<?xml version="1.0" encoding="UTF-8" ?>
+   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+	attributes:
+	<element-name attr1 attr2 ...>
+	<element-name attr1="value" attr2="value" ...>
+
+	attribute types:
+	string type: can take any literal string as a value. CDATA is a string type
+	tokenized type: ID, IDREF, IDREFS, ENTITY, ENTITIES, NMTOKEN, NMTOKENS
+	enumerated type: 
+		NotaionType: it declares that an element will be referenced to a NOTATION delared somewhere else in the XML document
+		Enumeration: enumeration helps you to define a sepcific list of values that the attribute value must match to
+
+
+	DTD: document type declaration
+	DTDs check the vocabulary and validity of the structure of the XML documents against the grammatical rules
+
+	a. internal DTD	
+
+	<!DOCTYPE element 
+	[
+		declaration1
+		declaration2
+		.......
+	]>
+
+	b. external DTD
+	1. SYSTEM identifier: helps/enables you to specify the location of an external DTD file containing DTD declarations. It ccontains SYSTEM and URI identifier
+	<!DOCTYPE [name-of-root-element] SYSTEM "file-name".dtd>
+	
+	2. public identifier:
+	<!DOCTYPE [name-of-root-element] PUBLIC "-//.../DTD Example//EN">
+
+	XSD: XML Schema Definition
+	DTDs check the vocabulary and validity of the structure of the XML documents against the grammatical rules
+
+	namespaces:
+	definitions of element and attribute
+	
+
+
+	
+			
 		
 
 

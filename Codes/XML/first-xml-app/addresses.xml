@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Internal DTD -->
+<!-- <!DOCTYPE addresses [
+    <!ELEMENT addresses (address)*>
+    <!ELEMENT address (name,company,phone)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT company (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+]> -->
+<!--linking external DTD in the same machine -->
+<!DOCTYPE addresses SYSTEM "./addresses-dtd.dtd">
+
+<addresses>
+    <address>
+        <name>Aarohi</name>
+        <company>Oracle</company>
+        <phone>9090909090</phone>
+    </address>
+    <address>
+        <name>Neha</name>
+        <company>Oracle</company>
+        <phone>9090909091</phone>
+    </address>
+</addresses>

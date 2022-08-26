@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:schema xmlns:a="http://www.w3.org/2001/XMLSchema">
+    <a:element name="products">
+        <a:complexType>
+            <a:sequence>
+                <a:element name="product" minOccurs="1" maxOccurs="unbounded">
+                    <a:complexType>
+                        <a:sequence>
+                            <a:element name="id" type="a:int" />
+                            <a:element name="name" type="a:string" />
+                            <a:element name="price" type="a:decimal" default="0.0" />
+                            <a:element name="description" type="a:string" maxOccurs="2" />
+                            <a:element name="rating" type="a:float" />
+                        </a:sequence>
+                    </a:complexType>
+                </a:element>
+            </a:sequence>
+        </a:complexType>
+    </a:element>
+</a:schema>
