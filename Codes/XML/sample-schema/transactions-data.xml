@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- <?xml-model href="./transactions-schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
-<!-- <transactions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./transactions-schema.xsd"> -->
-<root:transactions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="transaction-types/transactionschema transactions-schema.xsd" xmlns:root="transaction-types/transactionschema">
-    <!-- <transaction transaction_id="t101">
-        <transaction_info>
-            <transaction_amount>1000</transaction_amount>
-            <transaction_date>2002-09-24</transaction_date>
-        </transaction_info>
-    </transaction> -->
-    <root:transaction transaction_id="t101">
-        <transaction_info>
-            <transaction_amount>1000</transaction_amount>
-            <transaction_date>2022-08-11</transaction_date>
-        </transaction_info>
+<root:transactions xmlns:root="transaction-types/transactionschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="transaction-types/transactionschema transactions-schema.xsd">
+    <root:transaction root:transaction_id="t102">
+        <root:transaction_amount>1000</root:transaction_amount>
+        <root:transaction_date>2022-08-11</root:transaction_date>
     </root:transaction>
 </root:transactions>

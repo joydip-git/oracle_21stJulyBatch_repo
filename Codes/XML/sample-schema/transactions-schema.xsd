@@ -1,20 +1,17 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="transaction-types/transactiontypesschema" targetNamespace="transaction-types/transactionschema" elementFormDefault="qualified" attributeFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:td="transaction-types/transactionschema" targetNamespace="transaction-types/transactionschema" elementFormDefault="qualified" attributeFormDefault="qualified">
     <xs:import namespace="transaction-types/transactiontypesschema" schemaLocation="./transaction-types.xsd" />
 
-    <xs:complexType name="transaction_data">
-        <xs:complexContent>
-            <xs:extension base="tt:transaction_id_type">
-                <xs:sequence>
-                    <xs:element name="transaction_info" type="tt:transaction_detail" />
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-
+    <xs:complexType name="transaction_detail">
+        <xs:sequence>
+            <xs:element name="transaction_amount" type="xs:decimal" default="0" minOccurs="1" maxOccurs="1"></xs:element>
+            <xs:element name="transaction_date" type="xs:date" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="transaction_id" type="xs:ID" use="required" />
     </xs:complexType>
     <xs:element name="transactions">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="transaction" type="transaction_data" />
+                <xs:element name="transaction" type="td:transaction_detail" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
