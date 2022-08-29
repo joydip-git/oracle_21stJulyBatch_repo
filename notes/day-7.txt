@@ -26,4 +26,7 @@ all of them might contain attributes too
 3. how to refer an XML schema file from another?
 4. how to use namespace in schema or xml file?
 5. how to metion in XSD, that an elemenet might be or might npot be an empty element?
+
+
+https://www.liquid-technologies.com/Reference/XmlStudio/XSD%20Tutorial%20-%20Part%203%20-%20Extending%20Existing%20Types.html
  

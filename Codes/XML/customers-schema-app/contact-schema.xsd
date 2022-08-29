@@ -1,0 +1,20 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="./address-schema.xsd"></xs:include>
+    <xs:complexType name="contact">
+        <xs:sequence>
+            <xs:element name="email" type="xs:string" maxOccurs="2" minOccurs="1" />
+            <xs:element name="mobile_no" type="xs:long" minOccurs="1" maxOccurs="1" />
+            <xs:element name="alternate_mobile_no" type="xs:long" minOccurs="1" maxOccurs="1" />
+            <xs:element name="landline" type="xs:long" minOccurs="0" maxOccurs="1" />
+            <xs:element name="postal_address">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="address">
+                            <xs:attribute name="address_id" type="xs:ID" use="required" />
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,13 +1,19 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://addresstype/addressSchenma">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="./states-schema.xsd"></xs:include>
+    <!-- <xs:simpleType name="countries">
+        <xs:list itemType="xs:string" />
+    </xs:simpleType> -->
     <xs:complexType name="address">
         <xs:sequence>
             <xs:element name="door_no" type="xs:int" />
             <xs:element name="street" type="xs:string" />
             <xs:element name="area" type="xs:string" />
             <xs:element name="city" type="xs:string" />
-            <xs:element name="state" type="xs:string" />
-            <xs:element name="country" type="xs:string" default="IND" />
+            <xs:element name="state" type="states" />
+            <xs:element name="country" type="xs:string" default=" IND" />
             <xs:element name="pin_code" type="xs:long" />
         </xs:sequence>
+        <!-- <xs:attribute name="address_id" type="xs:ID" use="required" /> -->
     </xs:complexType>
+    <!-- <xs:element name=" postal_address" type=" address" /> -->
 </xs:schema>

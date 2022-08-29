@@ -14,7 +14,7 @@
             <mobile_no>9090909090</mobile_no>
             <alternate_mobile_no>9191919191</alternate_mobile_no>
             <landline>080123456</landline>
-            <address>
+            <postal_address address_id="a101">
                 <door_no>100</door_no>
                 <street>2nd Main</street>
                 <area>HSR</area>
@@ -22,26 +22,52 @@
                 <state>KA</state>
                 <country>IND</country>
                 <pin_code>123456</pin_code>
-            </address>
+            </postal_address>
         </contact_info>
         <addresses>
-            <order_address>
-                <door_no>100</door_no>
-                <street>2nd Main</street>
-                <area>HSR</area>
+            <!-- <order_address>
+                <door_no>101</door_no>
+                <street>3rd Main</street>
+                <area>ECity</area>
                 <city>Bangalore</city>
                 <state>KA</state>
                 <country>IND</country>
+                <pin_code>123400</pin_code>
+            </order_address> -->
+            <order_address order_address_id="a101" />
+            <!-- <delivery_address delivery_address_id="a101"> -->
+            <delivery_address delivery_address_id="a101" />
+        </addresses>
+    </customer>
+    <customer customer_id="c102">
+        <name>Akshat</name>
+        <contact_info>
+            <email>akshat@gmail.com</email>
+            <mobile_no>9292929292</mobile_no>
+            <alternate_mobile_no>9393939393</alternate_mobile_no>
+            <landline>0801234</landline>
+            <postal_address address_id="a102">
+                <door_no>111</door_no>
+                <street>xyz</street>
+                <area>hgjhg</area>
+                <city>Bareli</city>
+                <state>UP</state>
+                <country>IND</country>
                 <pin_code>123456</pin_code>
-            </order_address>
+            </postal_address>
+        </contact_info>
+        <addresses>
+            <order_address order_address_id="a102" />
             <delivery_address>
-                <door_no>100</door_no>
-                <street>2nd Main</street>
-                <area>HSR</area>
-                <city>Bangalore</city>
-                <state>KA</state>
-                <country>IND</country>
-                <pin_code>123456</pin_code>
+                <address>
+                    <door_no>111</door_no>
+                    <street>xyz</street>
+                    <area>hgjhg</area>
+                    <city>Mumbai</city>
+                    <state>MH</state>
+                    <country>IND</country>
+                    <pin_code>123456</pin_code>
+                </address>
             </delivery_address>
         </addresses>
     </customer>

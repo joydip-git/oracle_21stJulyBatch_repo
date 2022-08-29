@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="states">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="KAR" />
+            <xs:enumeration value="MH" />
+            <xs:enumeration value="UP" />
+            <xs:enumeration value="UT" />
+            <xs:enumeration value="HR" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

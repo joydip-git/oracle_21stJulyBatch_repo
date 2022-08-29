@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="transaction-types/transactiontypesschema" elementFormDefault="qualified" attributeFormDefault="qualified" version="1.0">
+    <xs:complexType name="transaction_id_type">
+        <xs:sequence></xs:sequence>
+        <xs:attribute name="transaction_id" type="xs:ID" use="required" />
+    </xs:complexType>
+    <xs:complexType name="transaction_detail">
+        <xs:sequence>
+            <xs:element name="transaction_amount" type="xs:decimal" default="0" minOccurs="1" maxOccurs="1"></xs:element>
+            <xs:element name="transaction_date" type="xs:date" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
