@@ -1,0 +1,26 @@
+XML Schema:
+alternative to DTD
+this describes the structure of an XML file
+the language is referred as XSD (xml schema definition)
+
+XSD:
+element/type=> depicts a type/tag/node/element in an xml file
+
+
+simple type:
+elements that contain text. it can't contain any other nested elements or attributes.
+
+complex type/element:
+an element with nested elements and/or attributes
+
+types of complex elements:
+ - a. empty element
+ - b. element having other elements
+ - c. elements that contain text
+ - d. elements that contain text as well as nested elements
+
+all of them might contain attributes too
+
+1. what is the purpose of id, ref and block properties of element in XSD?
+2. how to mention a list of possible values for an element in XSD?
+ 

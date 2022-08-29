@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- <?xml-model href="./contact-schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./contact-schema.xsd">
+    <contact contact_id="c101">
+        <name>Joydip</name>
+        <email></email>
+        <mobile>9090909090</mobile>
+        <address>
+            <door_no>123</door_no>
+            <street>2nd Main</street>
+            <city>Bangalore</city>
+            <state>KA</state>
+            <country>IND</country>
+            <pinCode>123456</pinCode>
+            <mode_of_contact>mobile</mode_of_contact>
+        </address>
+    </contact>
+</contacts>
