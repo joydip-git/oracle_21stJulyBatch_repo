@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- <?xml-model href="./customer-schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
+<!-- <customers></customers> -->
+
+<customers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./customer-schema.xsd">
+    <customer customer_id="c101">
+        <name>
+            Joydip
+        </name>
+        <contact_info>
+            <email>
+                joydip@gmail.com
+            </email>
+            <mobile_no>9090909090</mobile_no>
+            <alternate_mobile_no>9191919191</alternate_mobile_no>
+            <landline>080123456</landline>
+            <address>
+                <door_no>100</door_no>
+                <street>2nd Main</street>
+                <area>HSR</area>
+                <city>Bangalore</city>
+                <state>KA</state>
+                <country>IND</country>
+                <pin_code>123456</pin_code>
+            </address>
+        </contact_info>
+        <addresses>
+            <order_address>
+                <door_no>100</door_no>
+                <street>2nd Main</street>
+                <area>HSR</area>
+                <city>Bangalore</city>
+                <state>KA</state>
+                <country>IND</country>
+                <pin_code>123456</pin_code>
+            </order_address>
+            <delivery_address>
+                <door_no>100</door_no>
+                <street>2nd Main</street>
+                <area>HSR</area>
+                <city>Bangalore</city>
+                <state>KA</state>
+                <country>IND</country>
+                <pin_code>123456</pin_code>
+            </delivery_address>
+        </addresses>
+    </customer>
+</customers>

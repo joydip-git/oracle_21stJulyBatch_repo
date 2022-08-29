@@ -23,4 +23,7 @@ all of them might contain attributes too
 
 1. what is the purpose of id, ref and block properties of element in XSD?
 2. how to mention a list of possible values for an element in XSD?
+3. how to refer an XML schema file from another?
+4. how to use namespace in schema or xml file?
+5. how to metion in XSD, that an elemenet might be or might npot be an empty element?
  

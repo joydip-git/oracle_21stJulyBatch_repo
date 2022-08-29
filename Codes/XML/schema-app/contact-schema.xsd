@@ -9,22 +9,19 @@
                             <xs:element name="email" type="xs:string" />
                             <xs:element name="mobile" type="xs:long" />
                             <xs:element name="landline" type="xs:long" maxOccurs="1" minOccurs="0" />
-                            <xs:element name="address" maxOccurs="unbounded" minOccurs="1">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="door_no" type="xs:int" />
-                                        <xs:element name="street" type="xs:string" />
-                                        <xs:element name="city" type="xs:string" />
-                                        <xs:element name="state" type="xs:string" />
-                                        <xs:element name="country" type="xs:string" default="IND" minOccurs="0" maxOccurs="1" />
-                                        <xs:element name="pinCode" type="xs:long" />
-                                        <xs:element name="mode_of_contact" type="xs:string" fixed="mobile" />
-                                    </xs:sequence>
-                                </xs:complexType>
+                            <xs:element name="address">
+                                <xs:sequence>
+                                    <xs:element name="door_no" type="xs:int" />
+                                    <xs:element name="street" type="xs:string" />
+                                    <xs:element name="city" type="xs:string" />
+                                    <xs:element name="state" type="xs:string" />
+                                    <xs:element name="country" type="xs:string" default="IND" minOccurs="0" maxOccurs="1" />
+                                    <xs:element name="pinCode" type="xs:long" />
+                                    <xs:element name="mode_of_contact" type="xs:string" fixed="mobile" />
+                                </xs:sequence>
                             </xs:element>
                         </xs:sequence>
                         <xs:attribute name="contact_id" type="xs:string" use="required" />
-                        <!-- <xs:attribute name="country" type="xs:string" default="IND" /> -->
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

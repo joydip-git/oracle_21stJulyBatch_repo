@@ -1,0 +1,48 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="address">
+        <xs:sequence>
+            <xs:element name="door_no" type="xs:int" />
+            <xs:element name="street" type="xs:string" />
+            <xs:element name="area" type="xs:string" />
+            <xs:element name="city" type="xs:string" />
+            <xs:element name="state" type="xs:string" />
+            <xs:element name="country" type="xs:string" default="IND" />
+            <xs:element name="pin_code" type="xs:long" />
+        </xs:sequence>
+        <xs:attribute name="address_id" id="" type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="contact">
+        <xs:sequence>
+            <xs:element name="email" type="xs:string" maxOccurs="2" minOccurs="1" />
+            <xs:element name="mobile_no" type="xs:long" minOccurs="1" maxOccurs="1" />
+            <xs:element name="alternate_mobile_no" type="xs:long" minOccurs="1" maxOccurs="1" />
+            <xs:element name="landline" type="xs:long" minOccurs="0" maxOccurs="1" />
+            <xs:element name="address" type="address" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="customers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="customer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+                            <xs:element name="contact_info" minOccurs="1" maxOccurs="1" type="contact" />
+                            <xs:element name="addresses" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="order_address" type="address" maxOccurs="unbounded" minOccurs="0" />
+                                        <xs:element name="delivery_address" type="address" maxOccurs="unbounded" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="customer_id" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
