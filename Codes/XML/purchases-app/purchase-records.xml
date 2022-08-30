@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="./purchase-records.xsl" type="text/xsl"?>
+
+<p:Purchases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purchases.com/Purchase PurchasesType.xsd" xmlns:p="http://purchases.com/Purchase" xmlns:o="http://purchases.com/OrderTypes" xmlns:c="http://purchases.com/CustomerTypes" xmlns:cmn="http://purchases.com/CommonTypes">
+    <!-- Purchase List -->
+    <p:Purchase purchase_id="p101">
+        <p:OrderDetail order_id="o101">
+            <o:Item>
+                <o:ProductName>Widget1</o:ProductName>
+                <o:Quantity>1</o:Quantity>
+                <o:UnitPrice>3.42</o:UnitPrice>
+            </o:Item>
+            <o:Item>
+                <o:ProductName>Widget2</o:ProductName>
+                <o:Quantity>2</o:Quantity>
+                <o:UnitPrice>6.84</o:UnitPrice>
+            </o:Item>
+        </p:OrderDetail>
+        <p:PaymentMethod>VISA</p:PaymentMethod>
+        <p:CustomerDetails customer_id="c101">
+            <c:Name>James</c:Name>
+            <c:DeliveryAddress>
+                <cmn:Line1>15 Some Road</cmn:Line1>
+                <cmn:Line2>SomeTown</cmn:Line2>
+            </c:DeliveryAddress>
+            <c:BillingAddress>
+                <cmn:Line1>15 Some Road</cmn:Line1>
+                <cmn:Line2>SomeTown</cmn:Line2>
+            </c:BillingAddress>
+        </p:CustomerDetails>
+    </p:Purchase>
+</p:Purchases> 

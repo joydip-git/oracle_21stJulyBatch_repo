@@ -1,0 +1,35 @@
+<xs:schema xmlns:ord="http://purchases.com/OrderTypes" xmlns:pur="http://purchases.com/Purchase" xmlns:cmn="http://purchases.com/CommonTypes" xmlns:cust="http://purchases.com/CustomerTypes" targetNamespace="http://purchases.com/Purchase" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:import schemaLocation="./CommonTypes.xsd" namespace="http://purchases.com/CommonTypes" />
+    <xs:import schemaLocation="./CustomerTypes.xsd" namespace="http://purchases.com/CustomerTypes" />
+    <xs:import schemaLocation="./OrderTypes.xsd" namespace="http://purchases.com/OrderTypes" />
+
+    <!-- <xs:complexType name="Purchase">
+        <xs:sequence>
+            <xs:element name="OrderDetail" type="ord:OrderType" />
+            <xs:element name="PaymentMethod" type="cmn:PaymentMethodType" />
+            <xs:element ref="pur:CustomerDetails" />
+        </xs:sequence>
+        <xs:attribute name="purchase_id" type="xs:ID" use="required" />
+    </xs:complexType> -->
+
+    <xs:element name="Purchase">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OrderDetail" type="ord:OrderType" />
+                <xs:element name="PaymentMethod" type="cmn:PaymentMethodType" />
+                <xs:element ref="pur:CustomerDetails" />
+            </xs:sequence>
+            <xs:attribute name="purchase_id" type="xs:ID" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CustomerDetails" type="cust:CustomerType" />
+    <xs:element name="Purchases">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- <xs:element name="Purchase" type="pur:Purchase" /> -->
+                <xs:element ref="pur:Purchase" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
