@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<Purchases>
+    <Purchase purchase_id="p100">
+        <OrderDetail order_id="o100">
+            <Item>
+                <ProductName>Widget</ProductName>
+                <Quantity>1</Quantity>
+                <UnitPrice>3.42</UnitPrice>
+            </Item>
+            <Item>
+                <ProductName>Widget</ProductName>
+                <Quantity>1</Quantity>
+                <UnitPrice>3.42</UnitPrice>
+            </Item>
+        </OrderDetail>
+        <PaymentMethod>VISA</PaymentMethod>
+        <CustomerDetails customer_id="c100">
+            <Name>James</Name>
+            <DeliveryAddress>
+                <Line1>15 Some Road</Line1>
+                <Line2>SomeTown</Line2>
+            </DeliveryAddress>
+            <BillingAddress>
+                <Line1>15 Some Road</Line1>
+                <Line2>SomeTown</Line2>
+            </BillingAddress>
+        </CustomerDetails>
+    </Purchase>
+    <Purchase purchase_id="p101">
+        <OrderDetail order_id="o101">
+            <Item>
+                <ProductName>Widget</ProductName>
+                <Quantity>1</Quantity>
+                <UnitPrice>3.42</UnitPrice>
+            </Item>
+            <Item>
+                <ProductName>Widget</ProductName>
+                <Quantity>1</Quantity>
+                <UnitPrice>3.42</UnitPrice>
+            </Item>
+            <Item>
+                <ProductName>Widget</ProductName>
+                <Quantity>1</Quantity>
+                <UnitPrice>3.42</UnitPrice>
+            </Item>
+        </OrderDetail>
+        <PaymentMethod>VISA</PaymentMethod>
+        <CustomerDetails customer_id="c101">
+            <Name>James</Name>
+            <DeliveryAddress>
+                <Line1>15 Some Road</Line1>
+                <Line2>SomeTown</Line2>
+            </DeliveryAddress>
+            <BillingAddress>
+                <Line1>15 Some Road</Line1>
+                <Line2>SomeTown</Line2>
+            </BillingAddress>
+        </CustomerDetails>
+    </Purchase>
+</Purchases>
