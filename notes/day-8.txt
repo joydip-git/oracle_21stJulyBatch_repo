@@ -1,0 +1,16 @@
+XSL: Extensible Stylesheet Language
+XSLT: Extensible Stylesheet Language Transformation
+XPath
+
+
+C:\Program Files\Google\Chrome\Application>chrome.exe --allow-file-access-from-files
+
+file:///D:/oracle/oracle_21stJulyBatch_repo/Codes/XML/sample-xslt/contacts.xml
+
+Unsafe attempt to load xsl file from frame with xml file. URLs are treated as unique security origins
+
+<xsl:template 
+		mode=QName
+		name=QName => name of the element on which we are applying the template
+		priority=number
+		match=Pattern (pattern matching to the element(s) on which we are applying the template)
