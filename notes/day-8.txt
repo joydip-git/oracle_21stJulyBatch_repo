@@ -14,3 +14,73 @@ Unsafe attempt to load xsl file from frame with xml file. URLs are treated as un
 		name=QName => name of the element on which we are applying the template
 		priority=number
 		match=Pattern (pattern matching to the element(s) on which we are applying the template)
+
+XPath: a language to find information in an XML file. using XPath we can traverse through an XML document, find out elements, attributes etc. XPath provoides different expressions using which we can extract information from an XML file.
+
+a. structure defintions: XPath defines different parts of an XML file, such as elements, attribites, text, namespaces, document node, commenst etc.
+b. Path Expressions:XPath provides different expressions to select nodes or list of nodes in XML documents
+c. Built-in functions: XPath library provides lots of built-in functions in order ro manipulate string , numerical values, nodes, squences etc.
+
+Expressions: defines a pattern to select an XML node or list of nodes. these patterns are used by XSLT to perform transformations
+
+different types of nodes in XML document:
+1. Root
+2. Element
+3. Text
+4. Attribute
+5. Comment
+6. Namespaces
+7. Processing instruction
+
+
+pattern to select an XML node or list of nodes:
+Examples:
+<xsl:template match="/">
+<xsl:value-of select="@contact_id">
+
+a. / => root node
+b. // => current node that match the selection
+c. node-name => nodes with the given name
+d. . (dot) => current node
+e. .. (double-dot)=> parent of the current node
+f. @ => attribute
+
+<xsl:template match="//learner"> => select all the learner elements from the XML document, no matter where they are located in that XML document
+<xsl:for-each select="learners/learner"> => select all the learner elements from the XML document, which are children of learners element
+
+<xsl:value-of select="email"> => select the email element
+
+predicates: an XPath expression written in square brackets
+	/learners/learner[1] => pick up the first child (learner) element of learners
+	/learners/learner[last()] => pick up the last child (learner) element of learners
+	/learners/learner[@learner_id="l101"] => pick up the child (learner) element of learners, which has learner id of l101
+	/learners/learner[marks >= 85] => pick up the child (learner) element of learners, which has marks greater than or equal to 85
+
+wildcards:
+	* => any
+	/* => any root node
+	/learners/* => any child of learners
+	@* => any attribute
+
+	. => match which-ever current it is
+	node() => used to match node of any type
+
+operators:
+	comparison
+	= : is equal to,
+  != : is not equal to
+  >, <, >=, <=, 
+
+	boolean
+	and, or, not()
+
+   +, -, *, div, mod
+
+	starts-with(str1, str2)
+
+	node operators:
+	/, //, [...], |
+
+	node functions:
+	node(), comment(), last(), text(), name(), position() etc.
+	
