@@ -1,0 +1,10 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="transaction-schema/transactiontypes" xmlns:tt="transaction-schema/transactiondetailtypes">
+    <xs:import namespace="transaction-schema/transactiondetailtypes" schemaLocation="./transaction-detail-schema.xsd" />
+    <xs:element name="transactions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="transaction" type="tt:transaction_detail" maxOccurs="unbounded" minOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

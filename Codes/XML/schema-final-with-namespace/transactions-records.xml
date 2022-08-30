@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- B. with namespace-->
+<root:transactions xmlns:root="transaction-schema/transactiontypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="transaction-schema/transactiontypes transactions-schema.xsd">
+    <transaction transaction_id="t101">
+        <transaction_amount>1000</transaction_amount>
+        <transaction_date>2022-08-30</transaction_date>
+    </transaction>
+    <transaction transaction_id="t102">
+        <transaction_amount>2000</transaction_amount>
+        <transaction_date>2022-08-29</transaction_date>
+    </transaction>
+</root:transactions>  
+   

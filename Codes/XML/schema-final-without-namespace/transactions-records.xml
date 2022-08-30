@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- A. No namespace-->
+<!-- A.1. having separate XML schema linking line -->
+<!-- <?xml-model href="./transactions-schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
+<!-- <transactions> -->
+
+<!-- A.2. XML schema linking line is present along with the root element, indicating where that root element has been defined-->
+<transactions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./transactions-schema.xsd">
+    <transaction transaction_id="t101">
+        <transaction_amount>1000</transaction_amount>
+        <transaction_date>2022-08-30</transaction_date>
+    </transaction>
+    <transaction transaction_id="t102">
+        <transaction_amount>2000</transaction_amount>
+        <transaction_date>2022-08-29</transaction_date>
+    </transaction>
+</transactions>
