@@ -26,6 +26,7 @@ g. a functional property to calculate total salary based on basic, da and hra (j
 	b. ask for a choice
 	choice:1 
 	fetch all record from the array and display them
+	records must be sorted based on name of the employee
 
 	choice:2
 	ask user for an employee id
