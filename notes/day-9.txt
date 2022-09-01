@@ -50,3 +50,9 @@ class A{
 
 A obj = new A();
 obj.foo();
+
+closure:
+	for any function, JS maintains a lexical environemnt by saving the copy of the outer scope variable state
+scopes: an array which conatins copy of the state of the local variables of any function's outer scope variables
+
+any function has access to its outer scopes, but do npot have access to inner scopes
