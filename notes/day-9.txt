@@ -1,0 +1,37 @@
+data types:
+1. string
+2. number
+3. boolean
+4. object
+5. function
+
+Value keywords:
+NaN, null, undefined, Infinity etc.
+
+Does not support any compilation time type checking
+during runtime, it is done
+
+JS=> dynamic, loosely typed programming language
+
+2015:
+	const, let
+
+functions:
+	a. function declaration
+	b. function expression
+
+hoisting:
+	variable hoisting: a variable is registered during JS execution phase-1 (preparation phase) and it is assigned as undefined (no value assigned yet)
+			the same variable is assigned to proper value in the 2nd phase of execution (execution phase)
+			if you access and print the variable before it's declaration it will be undefined 
+							
+	function hoisting:	
+			function declaerations are hoisted, not function expressions
+			during the 1st phase (preparation), the function is hoisted (a variable is decalared iwth the name of that function and that variable starts referreing to the function immediately)
+			but being an expression, the expression variable in the function expression is hoisted with value undefined and that variable is assigned the function reference later in the 2nd stage
+			hence, the function written using function decalaration can be called before the declaration, whereas, the function written using function expression, can be called only after the exression.
+	
+
+chrome => V8
+firefox => spidermonkey
+safari => JSCore (Nitro)
