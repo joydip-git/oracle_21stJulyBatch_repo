@@ -11,10 +11,10 @@ NaN, null, undefined, Infinity etc.
 Does not support any compilation time type checking
 during runtime, it is done
 
-JS=> dynamic, loosely typed programming language
+JS=> dynamic, loosely typed and object-based (NOT OOP) programming language
 
 2015:
-	const, let
+	const, let, class, constructor
 
 functions:
 	a. function declaration
@@ -35,3 +35,18 @@ hoisting:
 chrome => V8
 firefox => spidermonkey
 safari => JSCore (Nitro)
+
+
+local variable of a function
+class level data members
+
+class A{
+	int x;
+	public A(){ x = 200;}
+	public void foo(){
+		int a = 100;
+	}
+}
+
+A obj = new A();
+obj.foo();

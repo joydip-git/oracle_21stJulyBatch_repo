@@ -22,14 +22,19 @@ console.log(anilObj['salary'])
 //<obj-variable>.<prop-name>()
 console.log(anilObj.printInfo())
 
+//anilObj is not iterable
+// for (var val of anilObj) {
+//     console.log(val)
+// }
+
+anilObj.location = 'Bangalore'
+anilObj.reprintInfo = function () {
+    return this.printInfo() + ' location'
+}
+
 //objects are enumerable
 for (let propName in anilObj) {
     //console.log(propName)
     const propValue = anilObj[propName]
     console.log(propName + ':' + propValue)
 }
-
-//anilObj is not iterable
-// for (var val of anilObj) {
-//     console.log(val)
-// }
