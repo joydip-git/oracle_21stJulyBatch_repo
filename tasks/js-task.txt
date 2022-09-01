@@ -1,0 +1,53 @@
+create a employee management application
+
+1. create a JS file with a constructor function 'employee'
+the employee constructor function is used to create instances of employee, each of which will contain following properties
+
+a. name
+b. id
+c. basic salary
+d. da salary
+e. hra salary
+f. total salary
+g. a functional property to calculate total salary based on basic, da and hra (just add them) and store the same in total salary property
+
+2. create a file which contain just an empty array. this will be used to store several employee instances
+
+3. now from another file, say index.js
+	note: to accept values from user, use window.prompt() function, to display anything use window.alert() function. for confoirmation use window.confirm() function
+
+	a. display a menu for an user:
+	1. show all records
+	2. show a record
+	3. add new record
+	4. update a record
+	5. delete a record
+
+	b. ask for a choice
+	choice:1 
+	fetch all record from the array and display them
+
+	choice:2
+	ask user for an employee id
+	find the record from the array and display that to the user
+	in case record is absent display a error message to user
+
+	choice: 3
+	then ask user to enter name, basic, da, hra salary
+	find the last record and the id of the same
+	create  new id for the new employee by increasing the id value	
+	create an employee instance (also calculate the salary) and add that in the array	
+	display a success message upon sucessful insertion	
+  
+	choice: 4
+	ask user for an employee id
+	then ask user to enter name, basic, da, hra salary
+	also calculate the salary again and then update the record that is present in the array
+	in case record is absent display a error message to user
+
+	choice: 5
+	ask user for an employee id
+	find the record from the array and display that to the user
+	ask for confirmation to delete the record
+	upon confirmation delete the record from the array
+   

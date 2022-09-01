@@ -66,3 +66,12 @@ function onChangeOfRadio() {
         resizeBtn()
     }
 }
+
+//localStorage
+sessionStorage.setItem('result', JSON.stringify([{
+    name: 'anil', id: 1, salary: 1000
+}, {
+    name: 'sunil', id: 2, salary: 2000
+}]))
+console.log(JSON.parse(sessionStorage.getItem('result')))
+sessionStorage.removeItem('result')
