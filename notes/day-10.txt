@@ -1,0 +1,25 @@
+Promise API
+
+function fn(){
+	const p = new Promise(
+		//code
+	)
+   return p
+}
+
+var promiseObj = fn()
+
+friend: (promise)
+	Task: tell that person what to do=> receive a package
+		a. success: tell what to do after he/she has received the package
+						ex: put it on the desk and notify me somehow that it has arrived
+		b. failure: tell what to do after he/she has not receive the package
+						ex: notify me somehow that you did not receive the package
+
+Promise: => given a task to complete
+		   => given instruction about what to do on successful completion of the task
+		   => given instruction about what to do on unsuccessful completion of the task
+
+	state: => pending, resolved (resolve()), rejected (reject())
+	result: => undefined->output of the task (if resolved)
+
