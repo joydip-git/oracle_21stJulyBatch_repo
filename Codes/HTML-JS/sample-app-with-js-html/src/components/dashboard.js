@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRMS APP</title>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-</head>
-
-<body>
-    <header>
+const dashboardDesign = `
+<header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">HRMS APP</a>
@@ -50,17 +32,13 @@
             </div>
         </nav>
     </header>
-    <div class="container" id="root">
+`
 
-    </div>
+function dashboard() {
+    return {
+        view: dashboardDesign,
+        controller: () => {
 
-    <script src="./src/models/person.js"></script>
-    <script src="./src/services/storageService.js"></script>
-    <script src="./src/utils/managerUtils.js"></script>
-    <script src="./src/manager/peopleManager.js"></script>
-    <script src="./src/components/home.js"></script>
-    <script src="./src/components/create.js"></script>
-    <script src="./src/index.js"></script>
-</body>
-
-</html>
+        }
+    }
+}

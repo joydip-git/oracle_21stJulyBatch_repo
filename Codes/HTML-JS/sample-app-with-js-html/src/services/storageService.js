@@ -1,13 +1,13 @@
 const getStorage = async () => {
     var records = sessionStorage.getItem('records')
-    if (records) {
+    if (!records) {
         return []
     }
     return JSON.parse(records)
 }
 
 const saveDataInStorage = async (recordsToSave) => {
-    sessionStorage.setItem(JSON.stringify(recordsToSave))
+    sessionStorage.setItem('records', JSON.stringify(recordsToSave))
 }
 
 const removeStorage = async () => {
