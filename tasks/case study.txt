@@ -1,9 +1,9 @@
 library management system:
-1. borrow a book
-2. return a book
-3. login
-4. logout
-5. search for a book (by name)
+3. borrow a book
+4. return a book
+1. login
+5. logout
+2. search for a book (by name)
 6. exit
 
 book: name, isbn(pk), price, description, author
