@@ -1,0 +1,38 @@
+library management system:
+1. borrow a book
+2. return a book
+3. login
+4. logout
+5. search for a book (by name)
+6. exit
+
+book: name, isbn(pk), price, description, author
+user: username (emailid-pk), password, name, mobile no
+bookloan: loanid(pk), borrowed book details(fk), borrower user details(fk), borrowed date, expected return date, actual return date, fine
+
+first an user has to login in order to 
+	2. borrow a book
+	3. return a book
+	1. search for a book (by name)
+
+UC-1: enter book name (enter partial name/fullname)
+		if found, then matching books will be returned
+
+UC-2:
+    borrow whichever book you want now
+	 there will be an entry made into library management system about which user ahs borrowed which book etc.
+
+UC-3: return the book
+	update the existing loan details (actual return date, fine will be update)
+
+UC-4: logout
+
+UC-5: exit
+
+
+packages:
+	entities
+	repository 
+	manager   
+	user interface 
+	
