@@ -6,3 +6,17 @@ create an application which will help you to sort product records based on user 
 		b. 2=> name
 		c. 3=> price
 		d. anything else => id
+
+
+class SortProduct ....{
+
+	public int compare(Product a, Product b){
+	}
+}
+class SortProductEnhanced extends SortProduct{
+
+	@override()
+	public int compare(Product a, Product b){
+       super.compare()...
+	}
+}
