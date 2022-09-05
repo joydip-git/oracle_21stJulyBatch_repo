@@ -7,7 +7,7 @@ package com.oracle.hrms.entities;
  * @author satarupa
  *
  */
-public class Employee {
+public class Employee implements Comparable<Employee> {
 	private final int id;
 	private float basicSalary;
 	private float daSalary;
@@ -108,5 +108,11 @@ public class Employee {
 
 	public void calculateSalary() {
 		this.totalSalary = this.basicSalary + this.daSalary + this.hraSalary;
+	}
+
+	@Override
+	public int compareTo(Employee arg0) {
+		//return Integer.compare(this.id, arg0.id);
+		return this.name.compareTo(arg0.name);
 	}
 }

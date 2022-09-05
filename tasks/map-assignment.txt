@@ -1,0 +1,15 @@
+String sentence = "Java is a superb technology. Java is interoperable, platform neutral, open source.";
+
+// a: 1
+// is: 2
+// interoperable: 1
+// Java: 2
+// neutral: 1,
+//.................
+
+create an application where one can view the words and their occurrences in a given sentence, in an alphabetical ascending order of the words
+class WordCount{
+	public Map countWords(String sentence){
+		return mapobj;
+	}
+}

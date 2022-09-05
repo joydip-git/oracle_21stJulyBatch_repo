@@ -51,4 +51,9 @@ public class UiUtil {
 
 		return employeeRef;
 	}
+	public static char continueOrNot(Scanner scanner) {		
+		System.out.println("\nContinue?[y/n/Y/N]: ");
+		char decision = scanner.next().charAt(0);
+		return decision;
+	}
 }

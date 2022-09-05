@@ -1,0 +1,56 @@
+initializer block:
+to initialize instance/static data members
+
+perform operations in Java class:
+1. constructor
+2. regular method
+3. block
+	a. instance intializer block: 
+		i. instance members as well as static members can be initialized
+		ii. this is executed every time an instance is created
+	b. static initializer block: 
+		i. only static members can be initialized
+		ii. this is executed ONLY ONE time, either when the first instance is created or you access a static member of the class for the very first time without creating any instance
+
+chracaterestics:
+a. block is executed when instance is created
+b. block is executed after the base class ctor is invoked
+c. block comes in the order in which they appear
+
+Java Collection Framework:
+Interfaces:
+	Set, List, Queue, DeQue etc.
+classes:
+	ArrayList, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet, Vector
+
+									Iterable(i) => Iterator<T> iterator()		
+															- hasNext()
+															- next() 
+															- remove()
+
+									Collection(i)
+											=> add, remove, removeIf(), size(), clear(), retainAll(), contains(), containsAll(), iterator, toArray(), isEmpty()
+
+List(i)								Queue(i)						Set(i)
+
+ArrayList	(c)						PriorityQueue(c)				HashSet (c)
+LinkedList(c)					DeQueue(i)						LinkedHashSet (c)
+Vector(c)								ArrayDeque(c)				SortedSet (i)
+	Stack (c)																	TreeSet (c)
+
+
+key:value
+localhost:jasvcuhasgdchua651235612VSAB
+
+	Map --> HashMap, LinkedHashMap
+
+SortedMap 
+
+TreeMap
+
+keySet()
+Set<Map.Entry<K,V>> entrySet()
+
+	getKey()
+	getValue()
+	setValue()
