@@ -6,7 +6,7 @@ library management system:
 2. search for a book (by name)
 6. exit
 
-book: name, isbn(pk), price, description, author
+bookcatalog: name, isbn(pk), price, description, author, count
 user: username (emailid-pk), password, name, mobile no
 bookloan: loanid(pk), borrowed book details(fk), borrower user details(fk), borrowed date, expected return date, actual return date, fine
 
