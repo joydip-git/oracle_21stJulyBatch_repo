@@ -1,0 +1,8 @@
+create an application which will help you to sort product records based on user choice
+
+1. Product: id, name, price, description
+2. sort choice
+		a. 1=> id
+		b. 2=> name
+		c. 3=> price
+		d. anything else => id
