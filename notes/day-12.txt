@@ -26,5 +26,12 @@ d. execute the query
 e. close connection
 
 
-
+SRS
+RA
+	- fetchAllRecords
+	- fetchRecordById(id)
+	- addRecord(obj)
+	- deleteRecord(id)
+	- updateRecord(obj)
+	- serachRecords(name)
 
