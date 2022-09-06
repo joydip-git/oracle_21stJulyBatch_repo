@@ -24,3 +24,7 @@ b. Create connection
 c. create statement
 d. execute the query
 e. close connection
+
+
+
+
