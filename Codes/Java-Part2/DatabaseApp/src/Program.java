@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class Program {
 
 	public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
-		String path = "D:\\\\oracle\\\\oracle_21stJulyBatch_repo\\\\Codes\\\\Java-Part2\\\\DatabaseApp\\\\resources\\\\config.properties";
+		String path = DbConstants.CONFIG_FILE_PATH;
 		readRecords(path);
 	}
 
@@ -21,7 +21,7 @@ public class Program {
 			// if (connection != null) {
 			// System.out.println("connected");
 			command = connection.createStatement();
-			String selectQuery = DbUtils.readQuery(path, "SELECT_QUERY");
+			String selectQuery = DbUtils.readQuery(path, DbConstants.SELECT_QUERY);
 			records = command.executeQuery(selectQuery);
 			while (records.next()) {
 				int id = records.getInt("id");
