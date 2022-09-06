@@ -1,0 +1,26 @@
+JDBC: Java Database Connectivity
+Java API to interact with database
+package: java.sql
+	Driver interface
+	Connection interface
+	Statement interface
+	PreparedStatement interface
+	ResultSet interface
+	ResultSetMetadata interface
+	DatabaseMetadata interface
+	RowSet interface
+
+	DriverManager class
+	
+JDBC drivers
+	JDBC-ODBC Bridge driver
+	Native Driver (partially java driver)
+	Network protocol driver (fully java driver)
+	Thin Driver (fully java driver)
+
+Connecting the database:
+a. register the driver class
+b. Create connection
+c. create statement
+d. execute the query
+e. close connection

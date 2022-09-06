@@ -1,0 +1,13 @@
+//try {
+			//Class.forName("oracle.jdbc.driver.OracleDriver");
+			//Class.forName("com.mysql.jdbc.Driver");
+			Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","Joydip9814");
+			//Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/<dbname>","root","root");
+			if(connection!=null) {
+				System.out.println("connected");
+			}else {
+				System.out.println("failed to make connection");
+			}
+		/*}catch( ex) {
+			
+		}*/
