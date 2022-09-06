@@ -1,3 +1,4 @@
+package com.oracle.databaseapp.dao.utils;
 
 public class DbConstants {
 	public final static String SELECT_QUERY = "SELECT_QUERY";

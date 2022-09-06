@@ -1,21 +1,29 @@
-import java.io.FileNotFoundException;
-import java.io.IOException;
+package com.oracle.databaseapp.dao;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Collection;
+import java.util.List;
 
-public class Program {
+import com.oracle.databaseapp.dao.utils.DbConstants;
+import com.oracle.databaseapp.dao.utils.DbUtils;
+import com.oracle.databaseapp.entities.Employee;
 
-	public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
-		String path = DbConstants.CONFIG_FILE_PATH;
-		readRecords(path);
+import java.util.ArrayList;;
+
+public class EmployeeDataAccessObject {
+	String path = null;
+
+	public EmployeeDataAccessObject() {
+		path = DbConstants.CONFIG_FILE_PATH;
 	}
 
-	static void readRecords(String path) throws FileNotFoundException, SQLException, IOException {
+	public Collection<Employee> fetchAllRecords() throws SQLException {
 		Connection connection = null;
 		Statement command = null;
 		ResultSet records = null;
+		List<Employee> employees = null;
 		try {
 			connection = DbUtils.createConnection(path);
 			// if (connection != null) {
@@ -23,16 +31,18 @@ public class Program {
 			command = connection.createStatement();
 			String selectQuery = DbUtils.readQuery(path, DbConstants.SELECT_QUERY);
 			records = command.executeQuery(selectQuery);
+			employees = new ArrayList<Employee>();
 			while (records.next()) {
 				int id = records.getInt("id");
 				String name = records.getString("name");
-				System.out.println(id+" "+name);
-			}
-			// }
+				Employee employee = new Employee(name,id);
+				employees.add(employee);
+			}			
 		} catch (Exception ex) {
 			System.err.println(ex.getMessage());
 		} finally {
 			DbUtils.closeConnection(connection);
 		}
+		return employees;
 	}
 }
