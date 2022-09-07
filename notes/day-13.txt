@@ -81,6 +81,23 @@ D:\oracle\oracle_21stJulyBatch_repo\Codes\Java-Part2\DatabaseApp\bin\com\oracle\
 
 => this command will compile the the class code into byte code and will display the complete class code in terms of byte code
 
+a mechanism of examining or modifying the behavior of a class during run time
+
+java.lang.Class => this class provides several useful methods to extract information about a type, change the runtime behavior of the class, create instance based on the metadata of the class, invoke ctor explicitly based on constructor metadata to create instance, extract method, getter, setter, field etc. information as well as invoke them based on that metadata
+
+Class => extract information of a type
+	type-name.class syntax => use type-name.class syntax to extract type information
+	Class => forName(type-name) => pass the fully-qualified type name in the forName() method
+
+
+	Object => getClass(instance-of-the-type) => pass an instance of a type, from which the getClass() will extract type information
+
+
+create instance based on metadata of the type
+
+java.lang.Class=> newInstance()
+java.lang.reflect.Constructor => 
+
 
 
 
