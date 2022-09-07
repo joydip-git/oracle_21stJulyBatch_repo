@@ -1,0 +1,86 @@
+code which interacts with data source => data access logic => class with methods (data access layer)
+code which applies some business logic on fetched data => business logic => class with methods (business layer)
+code which focuses on how the data should be presented in front of the end user => presentation logic => class with methods (presentation layer)
+
+Inversion of Control (IoC) -principle : inverting the control of creating instance of dependency factor(x) from dependent party (B) to somewhere (another class - Container) 
+Dependency Injection (DI) - mechanism : supplying an instance of dependency factor (X) into the dependent party (B)
+
+through constructor
+through getter/setter
+through services
+
+interface Abs{
+	string sayHello();
+}
+
+class X implements Abs{
+public string sayHello(){}
+}
+
+
+class IocContainer{
+	public static Abs create(){
+		return new X();
+	}
+}
+
+class B{
+	public void callHello(){
+		Abs obj = IocContainer.create();
+		//X obj = new X();
+      obj.sayHello();
+   }
+}
+
+B is dependent on the instance of X
+B => Dependent party
+X => Dependency factor
+
+
+class B{
+	 private Abs _abs;
+    public B(Abs abs){
+		_abs = abs;
+	 }
+	 public void callHello(){
+		_abs.sayHello();
+	}
+}
+
+class B{
+	 private Abs _abs;
+    public B(){
+	 }
+    public void setAbs(Abs abs)
+	 {
+		_abs = abs;
+	 }	
+	 public void callHello(){
+		_abs.sayHello();
+	}
+}
+
+application must have a DI framework
+will supply a container
+you have to register the dependecies with the container
+now, whenever any class in your application asks for DI of a depndency factor (already registered with the container), the container will create an instance of that DF and supply the same either to constructor or sette of the class.
+
+Program => EmployeeBusinessComponent => EmployeeDataAccessObject
+
+
+Reflection:
+>javap java.util.ArrayList
+
+javap tool to diassemble the class file ArrayList.java from java.util package and it dispplays the information about fields, getter/setters, constructors, methods during runtime
+
+my application:
+D:\oracle\oracle_21stJulyBatch_repo\Codes\Java-Part2\DatabaseApp\bin\com\oracle\databaseapp\bo>javap EmployeeBusinessComponent.class
+=> this command will display the information about fields, getter/setters, constructors, methods during runtime
+
+D:\oracle\oracle_21stJulyBatch_repo\Codes\Java-Part2\DatabaseApp\bin\com\oracle\databaseapp\bo>javap -c EmployeeBusinessComponent.class
+
+=> this command will compile the the class code into byte code and will display the complete class code in terms of byte code
+
+
+
+

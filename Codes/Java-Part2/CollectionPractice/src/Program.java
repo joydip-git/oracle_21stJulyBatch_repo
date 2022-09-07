@@ -42,5 +42,6 @@ public class Program {
 			String name = iterator.next();
 			System.out.println(name);
 		}
+		ArrayList<E>
 	}
 }
