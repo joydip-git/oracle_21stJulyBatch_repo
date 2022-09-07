@@ -32,13 +32,23 @@ public class Program {
 			 * parameterTypes = Arrays.asList(c.getParameterTypes());
 			 * parameterTypes.forEach(p->System.out.println(p.getName())); } });
 			 */
-			// Object obj = objOfClassStoringSampleInfo.newInstance();
-			Class[] types = { String.class, float.class };
+			
+			/*Class[] types = { String.class, float.class };
 			Constructor parameterizedCtor = objOfClassStoringSampleInfo.getConstructor(types);
 			Object[] parameters = { "Joydip", 2000 };
-			Object obj = parameterizedCtor.newInstance(parameters);
+			Object obj = parameterizedCtor.newInstance(parameters);*/
+			
+			Class[] salaryParamType ={float.class};
+			Class[] nameParamType ={String.class};
+			Method setSalaryMethod = objOfClassStoringSampleInfo.getMethod("setSalary", salaryParamType);
+			Method setNameMethod = objOfClassStoringSampleInfo.getMethod("setName", nameParamType);
+			
+			Object obj = objOfClassStoringSampleInfo.newInstance();
 			create(obj);
 
+			setNameMethod.invoke(obj, "Joydip");
+			setSalaryMethod.invoke(obj, 2000);
+			
 			Method methodInfo = objOfClassStoringSampleInfo.getMethod("print", null);
 			Object result = methodInfo.invoke(obj, null);
 			System.out.println(result);

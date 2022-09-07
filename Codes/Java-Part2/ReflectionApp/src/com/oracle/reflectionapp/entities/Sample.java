@@ -4,9 +4,9 @@ public class Sample implements ISample {
 
 	private String name;
 	private float salary;
-	/*public Sample() {
+	public Sample() {
 		
-	}*/
+	}
 	
 	/**
 	 * @param name
