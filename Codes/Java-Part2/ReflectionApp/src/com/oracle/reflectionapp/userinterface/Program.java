@@ -1,12 +1,13 @@
 package com.oracle.reflectionapp.userinterface;
 
-import com.oracle.reflectionapp.entities.ISample;
-import com.oracle.reflectionapp.entities.Sample;
+/*import com.oracle.reflectionapp.entities.ISample;
+import com.oracle.reflectionapp.entities.Sample;*/
 import java.lang.Class;
 import java.lang.reflect.*;
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.List;*/
+
 
 public class Program {
 

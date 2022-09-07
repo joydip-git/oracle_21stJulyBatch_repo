@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.oracle.databaseapp.bo.Abstractions.BusinessAbstractions;
 import com.oracle.databaseapp.container.IocContainer;
+import com.oracle.databaseapp.dao.EmployeeDataAccess;
 //import com.oracle.databaseapp.dao.EmployeeDataAccess;
 import com.oracle.databaseapp.dao.Abstractions.DataAccessAbstraction;
 import com.oracle.databaseapp.entities.Employee;
@@ -13,8 +14,16 @@ public class EmployeeBusinessComponent implements BusinessAbstractions<Employee>
 
 	private DataAccessAbstraction<Employee> dataAccessObject;
 
-	public EmployeeBusinessComponent() {
-		dataAccessObject = IocContainer.createContainer().createDaoInstance();
+	@SuppressWarnings("unchecked")
+	public EmployeeBusinessComponent() throws Exception {
+		//dataAccessObject = IocContainer.createContainer().createDaoInstance();
+		try {
+			dataAccessObject = IocContainer.createContainer().createInstance(DataAccessAbstraction.class, EmployeeDataAccess.class);
+		} catch (InstantiationException | IllegalAccessException | IllegalArgumentException | NoSuchMethodException
+				| SecurityException e) {
+			// TODO Auto-generated catch block
+			throw e;
+		}
 	}
 
 	public Collection<Employee> getSortedRecords(int choice) throws Exception {

@@ -23,26 +23,28 @@ public class Program {
 		return choice;
 	}
 
-	public static void main(String[] args) throws SQLException {
+	@SuppressWarnings("unchecked")
+	public static void main(String[] args) throws SQLException, InstantiationException, IllegalAccessException,
+			IllegalArgumentException, NoSuchMethodException, SecurityException {
 
-		// EmployeeBusinessComponent businessComponent = null;
+		BusinessAbstractions<Employee> businessComponent = IocContainer.createContainer()
+				.createInstance(BusinessAbstractions.class, EmployeeBusinessComponent.class);
+		;
 
-		// addRecord();
-		// updateRecord();
-		// deleteRecord();
-		// printAllRecords();
-		// printRecord();
-		searchRecords();
+		// addRecord(businessComponent);
+		// updateRecord(businessComponent);
+		// deleteRecord(businessComponent);
+		printAllRecords(businessComponent);
+		// printRecord(businessComponent);
+		// searchRecords(businessComponent);
 
 	}
 
-	private static void printAllRecords() {
-		BusinessAbstractions<Employee> businessComponent;
+	private static void printAllRecords(BusinessAbstractions<Employee> businessComponent) {
+
 		try {
 			printSortChoice();
 			int sortChoice = getSortChoice();
-			// businessComponent = new EmployeeBusinessComponent();
-			businessComponent = IocContainer.createContainer().createBusinessInstance();
 			Collection<Employee> records = businessComponent.getSortedRecords(sortChoice);
 			records.forEach(e -> System.out.println(e));
 		} catch (Exception e) {
@@ -51,11 +53,8 @@ public class Program {
 		}
 	}
 
-	private static void printRecord() {
-		BusinessAbstractions<Employee> businessComponent;
+	private static void printRecord(BusinessAbstractions<Employee> businessComponent) {
 		try {
-			// businessComponent = new EmployeeBusinessComponent();
-			businessComponent = IocContainer.createContainer().createBusinessInstance();
 			Employee record = businessComponent.getRecordById(2);
 			System.out.println(record);
 		} catch (Exception e) {
@@ -64,11 +63,9 @@ public class Program {
 		}
 	}
 
-	private static void addRecord() {
-		BusinessAbstractions<Employee> businessComponent;
+	private static void addRecord(BusinessAbstractions<Employee> businessComponent) {
+
 		try {
-			// businessComponent = new EmployeeBusinessComponent();
-			businessComponent = IocContainer.createContainer().createBusinessInstance();
 			boolean status = businessComponent.insertRecord(new Employee("Ramnath", 6));
 			System.out.println(status ? "record added" : "could not add record");
 		} catch (Exception e) {
@@ -76,11 +73,9 @@ public class Program {
 		}
 	}
 
-	private static void updateRecord() {
-		BusinessAbstractions<Employee> businessComponent;
+	private static void updateRecord(BusinessAbstractions<Employee> businessComponent) {
+
 		try {
-			// businessComponent = new EmployeeBusinessComponent();
-			businessComponent = IocContainer.createContainer().createBusinessInstance();
 			boolean status = businessComponent.modifyRecord(new Employee("Ram", 6));
 			System.out.println(status ? "record updated" : "could not update record");
 		} catch (Exception e) {
@@ -88,11 +83,8 @@ public class Program {
 		}
 	}
 
-	private static void deleteRecord() {
-		BusinessAbstractions<Employee> businessComponent;
+	private static void deleteRecord(BusinessAbstractions<Employee> businessComponent) {
 		try {
-			// businessComponent = new EmployeeBusinessComponent();
-			businessComponent = IocContainer.createContainer().createBusinessInstance();
 			boolean status = businessComponent.removeRecord(6);
 			System.out.println(status ? "record deleted" : "could not delete record");
 		} catch (Exception e) {
@@ -100,11 +92,8 @@ public class Program {
 		}
 	}
 
-	private static void searchRecords() {
-		BusinessAbstractions<Employee> businessComponent;
+	private static void searchRecords(BusinessAbstractions<Employee> businessComponent) {
 		try {
-			// businessComponent = new EmployeeBusinessComponent();
-			businessComponent = IocContainer.createContainer().createBusinessInstance();
 			Collection<Employee> records = businessComponent.searchRecordsByName("a");
 			records.forEach(e -> System.out.println(e));
 		} catch (Exception e) {
